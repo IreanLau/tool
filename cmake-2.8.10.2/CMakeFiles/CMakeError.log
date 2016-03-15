@@ -1,0 +1,3151 @@
+Determining if the environ exist failed with the following output:
+Change Dir: /home/lau/cmake-2.8.10.2/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/gmake "cmTryCompileExec2052761000/fast"
+gmake -f CMakeFiles/cmTryCompileExec2052761000.dir/build.make CMakeFiles/cmTryCompileExec2052761000.dir/build
+gmake[1]: Entering directory `/home/lau/cmake-2.8.10.2/CMakeFiles/CMakeTmp'
+/home/lau/cmake-2.8.10.2/Bootstrap.cmk/cmake -E cmake_progress_report /home/lau/cmake-2.8.10.2/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec2052761000.dir/CheckSymbolExists.c.o
+/usr/bin/gcc    -o CMakeFiles/cmTryCompileExec2052761000.dir/CheckSymbolExists.c.o   -c /home/lau/cmake-2.8.10.2/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+/home/lau/cmake-2.8.10.2/CMakeFiles/CMakeTmp/CheckSymbolExists.c: In function ‘main’:
+/home/lau/cmake-2.8.10.2/CMakeFiles/CMakeTmp/CheckSymbolExists.c:8: error: ‘environ’ undeclared (first use in this function)
+/home/lau/cmake-2.8.10.2/CMakeFiles/CMakeTmp/CheckSymbolExists.c:8: error: (Each undeclared identifier is reported only once
+/home/lau/cmake-2.8.10.2/CMakeFiles/CMakeTmp/CheckSymbolExists.c:8: error: for each function it appears in.)
+gmake[1]: Leaving directory `/home/lau/cmake-2.8.10.2/CMakeFiles/CMakeTmp'
+gmake[1]: *** [CMakeFiles/cmTryCompileExec2052761000.dir/CheckSymbolExists.c.o] Error 1
+gmake: *** [cmTryCompileExec2052761000/fast] Error 2
+
+File /home/lau/cmake-2.8.10.2/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <stdlib.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef environ
+  return ((int*)(&environ))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+
+Checking for non-standard argument to stl allocator<>::max_size failed to compile with the following output:
+Change Dir: /home/lau/cmake-2.8.10.2/Source/kwsys/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/gmake "cmTryCompileExec3774574336/fast"
+gmake -f CMakeFiles/cmTryCompileExec3774574336.dir/build.make CMakeFiles/cmTryCompileExec3774574336.dir/build
+gmake[1]: Entering directory `/home/lau/cmake-2.8.10.2/Source/kwsys/CMakeFiles/CMakeTmp'
+/home/lau/cmake-2.8.10.2/Bootstrap.cmk/cmake -E cmake_progress_report /home/lau/cmake-2.8.10.2/Source/kwsys/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building CXX object CMakeFiles/cmTryCompileExec3774574336.dir/kwsysPlatformTestsCXX.cxx.o
+/usr/bin/g++   -DKWSYS_STL_HAVE_STD=1 -DTEST_KWSYS_STL_HAS_ALLOCATOR_MAX_SIZE_ARGUMENT  -o CMakeFiles/cmTryCompileExec3774574336.dir/kwsysPlatformTestsCXX.cxx.o -c /home/lau/cmake-2.8.10.2/Source/kwsys/kwsysPlatformTestsCXX.cxx
+/home/lau/cmake-2.8.10.2/Source/kwsys/kwsysPlatformTestsCXX.cxx: In function ‘void f(const std::allocator<char>&)’:
+/home/lau/cmake-2.8.10.2/Source/kwsys/kwsysPlatformTestsCXX.cxx:256: error: no matching function for call to ‘std::allocator<char>::max_size(unsigned int) const’
+/usr/lib/gcc/i686-redhat-linux/4.4.7/../../../../include/c++/4.4.7/ext/new_allocator.h:98: note: candidates are: size_t __gnu_cxx::new_allocator<_Tp>::max_size() const [with _Tp = char]
+gmake[1]: Leaving directory `/home/lau/cmake-2.8.10.2/Source/kwsys/CMakeFiles/CMakeTmp'
+gmake[1]: *** [CMakeFiles/cmTryCompileExec3774574336.dir/kwsysPlatformTestsCXX.cxx.o] Error 1
+gmake: *** [cmTryCompileExec3774574336/fast] Error 2
+
+
+Checking whether "<>" is needed for template friends failed to compile with the following output:
+Change Dir: /home/lau/cmake-2.8.10.2/Source/kwsys/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/gmake "cmTryCompileExec2015455281/fast"
+gmake -f CMakeFiles/cmTryCompileExec2015455281.dir/build.make CMakeFiles/cmTryCompileExec2015455281.dir/build
+gmake[1]: Entering directory `/home/lau/cmake-2.8.10.2/Source/kwsys/CMakeFiles/CMakeTmp'
+/home/lau/cmake-2.8.10.2/Bootstrap.cmk/cmake -E cmake_progress_report /home/lau/cmake-2.8.10.2/Source/kwsys/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building CXX object CMakeFiles/cmTryCompileExec2015455281.dir/kwsysPlatformTestsCXX.cxx.o
+/usr/bin/g++   -DTEST_KWSYS_CXX_HAS_NULL_TEMPLATE_ARGS  -o CMakeFiles/cmTryCompileExec2015455281.dir/kwsysPlatformTestsCXX.cxx.o -c /home/lau/cmake-2.8.10.2/Source/kwsys/kwsysPlatformTestsCXX.cxx
+/home/lau/cmake-2.8.10.2/Source/kwsys/kwsysPlatformTestsCXX.cxx:141: warning: friend declaration ‘int f(A<T>&)’ declares a non-template function
+/home/lau/cmake-2.8.10.2/Source/kwsys/kwsysPlatformTestsCXX.cxx:141: note: (if this is not what you intended, make sure the function template has already been declared and add <> after the function name here) 
+/home/lau/cmake-2.8.10.2/Source/kwsys/kwsysPlatformTestsCXX.cxx: In function ‘int f(A<T>&) [with T = int]’:
+/home/lau/cmake-2.8.10.2/Source/kwsys/kwsysPlatformTestsCXX.cxx:147:   instantiated from here
+/home/lau/cmake-2.8.10.2/Source/kwsys/kwsysPlatformTestsCXX.cxx:143: error: ‘int A<int>::x’ is private
+/home/lau/cmake-2.8.10.2/Source/kwsys/kwsysPlatformTestsCXX.cxx:146: error: within this context
+gmake[1]: Leaving directory `/home/lau/cmake-2.8.10.2/Source/kwsys/CMakeFiles/CMakeTmp'
+gmake[1]: *** [CMakeFiles/cmTryCompileExec2015455281.dir/kwsysPlatformTestsCXX.cxx.o] Error 1
+gmake: *** [cmTryCompileExec2015455281/fast] Error 2
+
+
+Checking whether C++ compiler has '__int64' failed to compile with the following output:
+Change Dir: /home/lau/cmake-2.8.10.2/Source/kwsys/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/gmake "cmTryCompileExec783257722/fast"
+gmake -f CMakeFiles/cmTryCompileExec783257722.dir/build.make CMakeFiles/cmTryCompileExec783257722.dir/build
+gmake[1]: Entering directory `/home/lau/cmake-2.8.10.2/Source/kwsys/CMakeFiles/CMakeTmp'
+/home/lau/cmake-2.8.10.2/Bootstrap.cmk/cmake -E cmake_progress_report /home/lau/cmake-2.8.10.2/Source/kwsys/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building CXX object CMakeFiles/cmTryCompileExec783257722.dir/kwsysPlatformTestsCXX.cxx.o
+/usr/bin/g++   -DTEST_KWSYS_CXX_HAS___INT64  -o CMakeFiles/cmTryCompileExec783257722.dir/kwsysPlatformTestsCXX.cxx.o -c /home/lau/cmake-2.8.10.2/Source/kwsys/kwsysPlatformTestsCXX.cxx
+/home/lau/cmake-2.8.10.2/Source/kwsys/kwsysPlatformTestsCXX.cxx:126: error: ‘__int64’ does not name a type
+/home/lau/cmake-2.8.10.2/Source/kwsys/kwsysPlatformTestsCXX.cxx: In function ‘int main()’:
+/home/lau/cmake-2.8.10.2/Source/kwsys/kwsysPlatformTestsCXX.cxx:129: error: ‘__int64’ was not declared in this scope
+/home/lau/cmake-2.8.10.2/Source/kwsys/kwsysPlatformTestsCXX.cxx:129: error: expected ‘;’ before ‘n’
+/home/lau/cmake-2.8.10.2/Source/kwsys/kwsysPlatformTestsCXX.cxx:130: error: ‘n’ was not declared in this scope
+/home/lau/cmake-2.8.10.2/Source/kwsys/kwsysPlatformTestsCXX.cxx:130: error: ‘f’ was not declared in this scope
+gmake[1]: Leaving directory `/home/lau/cmake-2.8.10.2/Source/kwsys/CMakeFiles/CMakeTmp'
+gmake[1]: *** [CMakeFiles/cmTryCompileExec783257722.dir/kwsysPlatformTestsCXX.cxx.o] Error 1
+gmake: *** [cmTryCompileExec783257722/fast] Error 2
+
+
+Determining size of __int64 failed with the following output:
+Change Dir: /home/lau/cmake-2.8.10.2/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/gmake "cmTryCompileExec772289430/fast"
+gmake -f CMakeFiles/cmTryCompileExec772289430.dir/build.make CMakeFiles/cmTryCompileExec772289430.dir/build
+gmake[1]: Entering directory `/home/lau/cmake-2.8.10.2/CMakeFiles/CMakeTmp'
+/home/lau/cmake-2.8.10.2/Bootstrap.cmk/cmake -E cmake_progress_report /home/lau/cmake-2.8.10.2/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec772289430.dir/KWSYS_SIZEOF___INT64.c.o
+/usr/bin/gcc    -o CMakeFiles/cmTryCompileExec772289430.dir/KWSYS_SIZEOF___INT64.c.o   -c /home/lau/cmake-2.8.10.2/CMakeFiles/CheckTypeSize/KWSYS_SIZEOF___INT64.c
+/home/lau/cmake-2.8.10.2/CMakeFiles/CheckTypeSize/KWSYS_SIZEOF___INT64.c:19: error: ‘__int64’ undeclared here (not in a function)
+gmake[1]: Leaving directory `/home/lau/cmake-2.8.10.2/CMakeFiles/CMakeTmp'
+gmake[1]: *** [CMakeFiles/cmTryCompileExec772289430.dir/KWSYS_SIZEOF___INT64.c.o] Error 1
+gmake: *** [cmTryCompileExec772289430/fast] Error 2
+
+/home/lau/cmake-2.8.10.2/CMakeFiles/CheckTypeSize/KWSYS_SIZEOF___INT64.c:
+#include <sys/types.h>
+#include <stdint.h>
+#include <stddef.h>
+
+
+#undef KEY
+#if defined(__i386)
+# define KEY '_','_','i','3','8','6'
+#elif defined(__x86_64)
+# define KEY '_','_','x','8','6','_','6','4'
+#elif defined(__ppc__)
+# define KEY '_','_','p','p','c','_','_'
+#elif defined(__ppc64__)
+# define KEY '_','_','p','p','c','6','4','_','_'
+#endif
+
+#define SIZE (sizeof(__int64))
+char info_size[] =  {'I', 'N', 'F', 'O', ':', 's','i','z','e','[',
+  ('0' + ((SIZE / 10000)%10)),
+  ('0' + ((SIZE / 1000)%10)),
+  ('0' + ((SIZE / 100)%10)),
+  ('0' + ((SIZE / 10)%10)),
+  ('0' +  (SIZE    % 10)),
+  ']',
+#ifdef KEY
+  ' ','k','e','y','[', KEY, ']',
+#endif
+  '\0'};
+
+#ifdef __CLASSIC_C__
+int main(argc, argv) int argc; char *argv[];
+#else
+int main(int argc, char *argv[])
+#endif
+{
+  int require = 0;
+  require += info_size[argc];
+  (void)argv;
+  return require;
+}
+
+
+Checking whether CXX compiler has environ in stdlib.h failed to compile with the following output:
+Change Dir: /home/lau/cmake-2.8.10.2/Source/kwsys/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/gmake "cmTryCompileExec4162820193/fast"
+gmake -f CMakeFiles/cmTryCompileExec4162820193.dir/build.make CMakeFiles/cmTryCompileExec4162820193.dir/build
+gmake[1]: Entering directory `/home/lau/cmake-2.8.10.2/Source/kwsys/CMakeFiles/CMakeTmp'
+/home/lau/cmake-2.8.10.2/Bootstrap.cmk/cmake -E cmake_progress_report /home/lau/cmake-2.8.10.2/Source/kwsys/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building CXX object CMakeFiles/cmTryCompileExec4162820193.dir/kwsysPlatformTestsCXX.cxx.o
+/usr/bin/g++   -DTEST_KWSYS_CXX_HAS_ENVIRON_IN_STDLIB_H  -o CMakeFiles/cmTryCompileExec4162820193.dir/kwsysPlatformTestsCXX.cxx.o -c /home/lau/cmake-2.8.10.2/Source/kwsys/kwsysPlatformTestsCXX.cxx
+/home/lau/cmake-2.8.10.2/Source/kwsys/kwsysPlatformTestsCXX.cxx: In function ‘int main()’:
+/home/lau/cmake-2.8.10.2/Source/kwsys/kwsysPlatformTestsCXX.cxx:426: error: ‘environ’ was not declared in this scope
+gmake[1]: Leaving directory `/home/lau/cmake-2.8.10.2/Source/kwsys/CMakeFiles/CMakeTmp'
+gmake[1]: *** [CMakeFiles/cmTryCompileExec4162820193.dir/kwsysPlatformTestsCXX.cxx.o] Error 1
+gmake: *** [cmTryCompileExec4162820193/fast] Error 2
+
+
+Determining if the function connect exists in the socket;dl failed with the following output:
+Change Dir: /home/lau/cmake-2.8.10.2/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/gmake "cmTryCompileExec1693652644/fast"
+gmake -f CMakeFiles/cmTryCompileExec1693652644.dir/build.make CMakeFiles/cmTryCompileExec1693652644.dir/build
+gmake[1]: Entering directory `/home/lau/cmake-2.8.10.2/CMakeFiles/CMakeTmp'
+/home/lau/cmake-2.8.10.2/Bootstrap.cmk/cmake -E cmake_progress_report /home/lau/cmake-2.8.10.2/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec1693652644.dir/CheckFunctionExists.c.o
+/usr/bin/gcc   -DCHECK_FUNCTION_EXISTS=connect   -o CMakeFiles/cmTryCompileExec1693652644.dir/CheckFunctionExists.c.o   -c /home/lau/cmake-2.8.10.2/Modules/CheckFunctionExists.c
+Linking C executable cmTryCompileExec1693652644
+/home/lau/cmake-2.8.10.2/Bootstrap.cmk/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec1693652644.dir/link.txt --verbose=1
+/usr/bin/gcc      -DCHECK_FUNCTION_EXISTS=connect    CMakeFiles/cmTryCompileExec1693652644.dir/CheckFunctionExists.c.o  -o cmTryCompileExec1693652644 -rdynamic -lsocket -ldl 
+/usr/bin/ld: cannot find -lsocket
+collect2: ld returned 1 exit status
+gmake[1]: Leaving directory `/home/lau/cmake-2.8.10.2/CMakeFiles/CMakeTmp'
+gmake[1]: *** [cmTryCompileExec1693652644] Error 1
+gmake: *** [cmTryCompileExec1693652644/fast] Error 2
+
+
+Determining if the function recv exists in the network;dl failed with the following output:
+Change Dir: /home/lau/cmake-2.8.10.2/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/gmake "cmTryCompileExec2304289774/fast"
+gmake -f CMakeFiles/cmTryCompileExec2304289774.dir/build.make CMakeFiles/cmTryCompileExec2304289774.dir/build
+gmake[1]: Entering directory `/home/lau/cmake-2.8.10.2/CMakeFiles/CMakeTmp'
+/home/lau/cmake-2.8.10.2/Bootstrap.cmk/cmake -E cmake_progress_report /home/lau/cmake-2.8.10.2/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec2304289774.dir/CheckFunctionExists.c.o
+/usr/bin/gcc   -DCHECK_FUNCTION_EXISTS=recv   -o CMakeFiles/cmTryCompileExec2304289774.dir/CheckFunctionExists.c.o   -c /home/lau/cmake-2.8.10.2/Modules/CheckFunctionExists.c
+Linking C executable cmTryCompileExec2304289774
+/home/lau/cmake-2.8.10.2/Bootstrap.cmk/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec2304289774.dir/link.txt --verbose=1
+/usr/bin/gcc      -DCHECK_FUNCTION_EXISTS=recv    CMakeFiles/cmTryCompileExec2304289774.dir/CheckFunctionExists.c.o  -o cmTryCompileExec2304289774 -rdynamic -lnetwork -ldl 
+/usr/bin/ld: cannot find -lnetwork
+collect2: ld returned 1 exit status
+gmake[1]: Leaving directory `/home/lau/cmake-2.8.10.2/CMakeFiles/CMakeTmp'
+gmake[1]: *** [cmTryCompileExec2304289774] Error 1
+gmake: *** [cmTryCompileExec2304289774/fast] Error 2
+
+
+Determining if the function getch exists in the ws2_32;dl failed with the following output:
+Change Dir: /home/lau/cmake-2.8.10.2/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/gmake "cmTryCompileExec4003316801/fast"
+gmake -f CMakeFiles/cmTryCompileExec4003316801.dir/build.make CMakeFiles/cmTryCompileExec4003316801.dir/build
+gmake[1]: Entering directory `/home/lau/cmake-2.8.10.2/CMakeFiles/CMakeTmp'
+/home/lau/cmake-2.8.10.2/Bootstrap.cmk/cmake -E cmake_progress_report /home/lau/cmake-2.8.10.2/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec4003316801.dir/CheckFunctionExists.c.o
+/usr/bin/gcc   -DCHECK_FUNCTION_EXISTS=getch   -o CMakeFiles/cmTryCompileExec4003316801.dir/CheckFunctionExists.c.o   -c /home/lau/cmake-2.8.10.2/Modules/CheckFunctionExists.c
+Linking C executable cmTryCompileExec4003316801
+/home/lau/cmake-2.8.10.2/Bootstrap.cmk/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec4003316801.dir/link.txt --verbose=1
+/usr/bin/gcc      -DCHECK_FUNCTION_EXISTS=getch    CMakeFiles/cmTryCompileExec4003316801.dir/CheckFunctionExists.c.o  -o cmTryCompileExec4003316801 -rdynamic -lws2_32 -ldl 
+/usr/bin/ld: cannot find -lws2_32
+collect2: ld returned 1 exit status
+gmake[1]: Leaving directory `/home/lau/cmake-2.8.10.2/CMakeFiles/CMakeTmp'
+gmake[1]: *** [cmTryCompileExec4003316801] Error 1
+gmake: *** [cmTryCompileExec4003316801/fast] Error 2
+
+
+Determining if the function getch exists in the winmm;dl failed with the following output:
+Change Dir: /home/lau/cmake-2.8.10.2/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/gmake "cmTryCompileExec3662601618/fast"
+gmake -f CMakeFiles/cmTryCompileExec3662601618.dir/build.make CMakeFiles/cmTryCompileExec3662601618.dir/build
+gmake[1]: Entering directory `/home/lau/cmake-2.8.10.2/CMakeFiles/CMakeTmp'
+/home/lau/cmake-2.8.10.2/Bootstrap.cmk/cmake -E cmake_progress_report /home/lau/cmake-2.8.10.2/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec3662601618.dir/CheckFunctionExists.c.o
+/usr/bin/gcc   -DCHECK_FUNCTION_EXISTS=getch   -o CMakeFiles/cmTryCompileExec3662601618.dir/CheckFunctionExists.c.o   -c /home/lau/cmake-2.8.10.2/Modules/CheckFunctionExists.c
+Linking C executable cmTryCompileExec3662601618
+/home/lau/cmake-2.8.10.2/Bootstrap.cmk/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec3662601618.dir/link.txt --verbose=1
+/usr/bin/gcc      -DCHECK_FUNCTION_EXISTS=getch    CMakeFiles/cmTryCompileExec3662601618.dir/CheckFunctionExists.c.o  -o cmTryCompileExec3662601618 -rdynamic -lwinmm -ldl 
+/usr/bin/ld: cannot find -lwinmm
+collect2: ld returned 1 exit status
+gmake[1]: Leaving directory `/home/lau/cmake-2.8.10.2/CMakeFiles/CMakeTmp'
+gmake[1]: *** [cmTryCompileExec3662601618] Error 1
+gmake: *** [cmTryCompileExec3662601618/fast] Error 2
+
+
+Determining if the function idna_to_ascii_lz exists in the idn;dl failed with the following output:
+Change Dir: /home/lau/cmake-2.8.10.2/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/gmake "cmTryCompileExec3415385248/fast"
+gmake -f CMakeFiles/cmTryCompileExec3415385248.dir/build.make CMakeFiles/cmTryCompileExec3415385248.dir/build
+gmake[1]: Entering directory `/home/lau/cmake-2.8.10.2/CMakeFiles/CMakeTmp'
+/home/lau/cmake-2.8.10.2/Bootstrap.cmk/cmake -E cmake_progress_report /home/lau/cmake-2.8.10.2/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec3415385248.dir/CheckFunctionExists.c.o
+/usr/bin/gcc   -DCHECK_FUNCTION_EXISTS=idna_to_ascii_lz   -o CMakeFiles/cmTryCompileExec3415385248.dir/CheckFunctionExists.c.o   -c /home/lau/cmake-2.8.10.2/Modules/CheckFunctionExists.c
+Linking C executable cmTryCompileExec3415385248
+/home/lau/cmake-2.8.10.2/Bootstrap.cmk/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec3415385248.dir/link.txt --verbose=1
+/usr/bin/gcc      -DCHECK_FUNCTION_EXISTS=idna_to_ascii_lz    CMakeFiles/cmTryCompileExec3415385248.dir/CheckFunctionExists.c.o  -o cmTryCompileExec3415385248 -rdynamic -lidn -ldl 
+/usr/bin/ld: cannot find -lidn
+collect2: ld returned 1 exit status
+gmake[1]: Leaving directory `/home/lau/cmake-2.8.10.2/CMakeFiles/CMakeTmp'
+gmake[1]: *** [cmTryCompileExec3415385248] Error 1
+gmake: *** [cmTryCompileExec3415385248/fast] Error 2
+
+
+Determining if the include file process.h exists failed with the following output:
+Change Dir: /home/lau/cmake-2.8.10.2/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/gmake "cmTryCompileExec2023762629/fast"
+gmake -f CMakeFiles/cmTryCompileExec2023762629.dir/build.make CMakeFiles/cmTryCompileExec2023762629.dir/build
+gmake[1]: Entering directory `/home/lau/cmake-2.8.10.2/CMakeFiles/CMakeTmp'
+/home/lau/cmake-2.8.10.2/Bootstrap.cmk/cmake -E cmake_progress_report /home/lau/cmake-2.8.10.2/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec2023762629.dir/CheckIncludeFile.c.o
+/usr/bin/gcc    -o CMakeFiles/cmTryCompileExec2023762629.dir/CheckIncludeFile.c.o   -c /home/lau/cmake-2.8.10.2/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+/home/lau/cmake-2.8.10.2/CMakeFiles/CMakeTmp/CheckIncludeFile.c:1:21: error: process.h: No such file or directory
+gmake[1]: Leaving directory `/home/lau/cmake-2.8.10.2/CMakeFiles/CMakeTmp'
+gmake[1]: *** [CMakeFiles/cmTryCompileExec2023762629.dir/CheckIncludeFile.c.o] Error 1
+gmake: *** [cmTryCompileExec2023762629/fast] Error 2
+
+
+Determining if files stdio.h;stddef.h;sys/types.h;inttypes.h;alloca.h;arpa/inet.h;dlfcn.h;fcntl.h;malloc.h;memory.h;netdb.h;sys/poll.h;assert.h;limits.h;sys/socket.h;netinet/in.h;net/if.h;netinet/if_ether.h;netinet/tcp.h;sys/select.h;utime.h;netinet/in.h;pwd.h;sgtty.h;stdint.h;stdlib.h;string.h;strings.h;sys/param.h;sys/stat.h;sys/time.h;sys/resource.h;termios.h;termio.h;io.h exist failed with the following output:
+Change Dir: /home/lau/cmake-2.8.10.2/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/gmake "cmTryCompileExec1655666744/fast"
+gmake -f CMakeFiles/cmTryCompileExec1655666744.dir/build.make CMakeFiles/cmTryCompileExec1655666744.dir/build
+gmake[1]: Entering directory `/home/lau/cmake-2.8.10.2/CMakeFiles/CMakeTmp'
+/home/lau/cmake-2.8.10.2/Bootstrap.cmk/cmake -E cmake_progress_report /home/lau/cmake-2.8.10.2/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec1655666744.dir/CheckIncludeFiles.c.o
+/usr/bin/gcc    -o CMakeFiles/cmTryCompileExec1655666744.dir/CheckIncludeFiles.c.o   -c /home/lau/cmake-2.8.10.2/CMakeFiles/CMakeTmp/CheckIncludeFiles.c
+/home/lau/cmake-2.8.10.2/CMakeFiles/CMakeTmp/CheckIncludeFiles.c:36:16: error: io.h: No such file or directory
+gmake[1]: Leaving directory `/home/lau/cmake-2.8.10.2/CMakeFiles/CMakeTmp'
+gmake[1]: *** [CMakeFiles/cmTryCompileExec1655666744.dir/CheckIncludeFiles.c.o] Error 1
+gmake: *** [cmTryCompileExec1655666744/fast] Error 2
+
+Source:
+/* */
+#include <stdio.h>
+#include <stddef.h>
+#include <sys/types.h>
+#include <inttypes.h>
+#include <alloca.h>
+#include <arpa/inet.h>
+#include <dlfcn.h>
+#include <fcntl.h>
+#include <malloc.h>
+#include <memory.h>
+#include <netdb.h>
+#include <sys/poll.h>
+#include <assert.h>
+#include <limits.h>
+#include <sys/socket.h>
+#include <netinet/in.h>
+#include <net/if.h>
+#include <netinet/if_ether.h>
+#include <netinet/tcp.h>
+#include <sys/select.h>
+#include <utime.h>
+#include <netinet/in.h>
+#include <pwd.h>
+#include <sgtty.h>
+#include <stdint.h>
+#include <stdlib.h>
+#include <string.h>
+#include <strings.h>
+#include <sys/param.h>
+#include <sys/stat.h>
+#include <sys/time.h>
+#include <sys/resource.h>
+#include <termios.h>
+#include <termio.h>
+#include <io.h>
+
+
+int main(){return 0;}
+
+Determining if files stdio.h;stddef.h;sys/types.h;inttypes.h;alloca.h;arpa/inet.h;dlfcn.h;fcntl.h;malloc.h;memory.h;netdb.h;sys/poll.h;assert.h;limits.h;sys/socket.h;netinet/in.h;net/if.h;netinet/if_ether.h;netinet/tcp.h;sys/select.h;utime.h;netinet/in.h;pwd.h;sgtty.h;stdint.h;stdlib.h;string.h;strings.h;sys/param.h;sys/stat.h;sys/time.h;sys/resource.h;termios.h;termio.h;time.h;unistd.h;sys/utime.h exist failed with the following output:
+Change Dir: /home/lau/cmake-2.8.10.2/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/gmake "cmTryCompileExec3451339788/fast"
+gmake -f CMakeFiles/cmTryCompileExec3451339788.dir/build.make CMakeFiles/cmTryCompileExec3451339788.dir/build
+gmake[1]: Entering directory `/home/lau/cmake-2.8.10.2/CMakeFiles/CMakeTmp'
+/home/lau/cmake-2.8.10.2/Bootstrap.cmk/cmake -E cmake_progress_report /home/lau/cmake-2.8.10.2/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec3451339788.dir/CheckIncludeFiles.c.o
+/usr/bin/gcc    -o CMakeFiles/cmTryCompileExec3451339788.dir/CheckIncludeFiles.c.o   -c /home/lau/cmake-2.8.10.2/CMakeFiles/CMakeTmp/CheckIncludeFiles.c
+/home/lau/cmake-2.8.10.2/CMakeFiles/CMakeTmp/CheckIncludeFiles.c:38:23: error: sys/utime.h: No such file or directory
+gmake[1]: Leaving directory `/home/lau/cmake-2.8.10.2/CMakeFiles/CMakeTmp'
+gmake[1]: *** [CMakeFiles/cmTryCompileExec3451339788.dir/CheckIncludeFiles.c.o] Error 1
+gmake: *** [cmTryCompileExec3451339788/fast] Error 2
+
+Source:
+/* */
+#include <stdio.h>
+#include <stddef.h>
+#include <sys/types.h>
+#include <inttypes.h>
+#include <alloca.h>
+#include <arpa/inet.h>
+#include <dlfcn.h>
+#include <fcntl.h>
+#include <malloc.h>
+#include <memory.h>
+#include <netdb.h>
+#include <sys/poll.h>
+#include <assert.h>
+#include <limits.h>
+#include <sys/socket.h>
+#include <netinet/in.h>
+#include <net/if.h>
+#include <netinet/if_ether.h>
+#include <netinet/tcp.h>
+#include <sys/select.h>
+#include <utime.h>
+#include <netinet/in.h>
+#include <pwd.h>
+#include <sgtty.h>
+#include <stdint.h>
+#include <stdlib.h>
+#include <string.h>
+#include <strings.h>
+#include <sys/param.h>
+#include <sys/stat.h>
+#include <sys/time.h>
+#include <sys/resource.h>
+#include <termios.h>
+#include <termio.h>
+#include <time.h>
+#include <unistd.h>
+#include <sys/utime.h>
+
+
+int main(){return 0;}
+
+Determining if files stdio.h;stddef.h;sys/types.h;inttypes.h;alloca.h;arpa/inet.h;dlfcn.h;fcntl.h;malloc.h;memory.h;netdb.h;sys/poll.h;assert.h;limits.h;sys/socket.h;netinet/in.h;net/if.h;netinet/if_ether.h;netinet/tcp.h;sys/select.h;utime.h;netinet/in.h;pwd.h;sgtty.h;stdint.h;stdlib.h;string.h;strings.h;sys/param.h;sys/stat.h;sys/time.h;sys/resource.h;termios.h;termio.h;time.h;unistd.h;sockio.h exist failed with the following output:
+Change Dir: /home/lau/cmake-2.8.10.2/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/gmake "cmTryCompileExec780914151/fast"
+gmake -f CMakeFiles/cmTryCompileExec780914151.dir/build.make CMakeFiles/cmTryCompileExec780914151.dir/build
+gmake[1]: Entering directory `/home/lau/cmake-2.8.10.2/CMakeFiles/CMakeTmp'
+/home/lau/cmake-2.8.10.2/Bootstrap.cmk/cmake -E cmake_progress_report /home/lau/cmake-2.8.10.2/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec780914151.dir/CheckIncludeFiles.c.o
+/usr/bin/gcc    -o CMakeFiles/cmTryCompileExec780914151.dir/CheckIncludeFiles.c.o   -c /home/lau/cmake-2.8.10.2/CMakeFiles/CMakeTmp/CheckIncludeFiles.c
+/home/lau/cmake-2.8.10.2/CMakeFiles/CMakeTmp/CheckIncludeFiles.c:38:20: error: sockio.h: No such file or directory
+gmake[1]: Leaving directory `/home/lau/cmake-2.8.10.2/CMakeFiles/CMakeTmp'
+gmake[1]: *** [CMakeFiles/cmTryCompileExec780914151.dir/CheckIncludeFiles.c.o] Error 1
+gmake: *** [cmTryCompileExec780914151/fast] Error 2
+
+Source:
+/* */
+#include <stdio.h>
+#include <stddef.h>
+#include <sys/types.h>
+#include <inttypes.h>
+#include <alloca.h>
+#include <arpa/inet.h>
+#include <dlfcn.h>
+#include <fcntl.h>
+#include <malloc.h>
+#include <memory.h>
+#include <netdb.h>
+#include <sys/poll.h>
+#include <assert.h>
+#include <limits.h>
+#include <sys/socket.h>
+#include <netinet/in.h>
+#include <net/if.h>
+#include <netinet/if_ether.h>
+#include <netinet/tcp.h>
+#include <sys/select.h>
+#include <utime.h>
+#include <netinet/in.h>
+#include <pwd.h>
+#include <sgtty.h>
+#include <stdint.h>
+#include <stdlib.h>
+#include <string.h>
+#include <strings.h>
+#include <sys/param.h>
+#include <sys/stat.h>
+#include <sys/time.h>
+#include <sys/resource.h>
+#include <termios.h>
+#include <termio.h>
+#include <time.h>
+#include <unistd.h>
+#include <sockio.h>
+
+
+int main(){return 0;}
+
+Determining if files stdio.h;stddef.h;sys/types.h;inttypes.h;alloca.h;arpa/inet.h;dlfcn.h;fcntl.h;malloc.h;memory.h;netdb.h;sys/poll.h;assert.h;limits.h;sys/socket.h;netinet/in.h;net/if.h;netinet/if_ether.h;netinet/tcp.h;sys/select.h;utime.h;netinet/in.h;pwd.h;sgtty.h;stdint.h;stdlib.h;string.h;strings.h;sys/param.h;sys/stat.h;sys/time.h;sys/resource.h;termios.h;termio.h;time.h;unistd.h;sys/sockio.h exist failed with the following output:
+Change Dir: /home/lau/cmake-2.8.10.2/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/gmake "cmTryCompileExec2495216547/fast"
+gmake -f CMakeFiles/cmTryCompileExec2495216547.dir/build.make CMakeFiles/cmTryCompileExec2495216547.dir/build
+gmake[1]: Entering directory `/home/lau/cmake-2.8.10.2/CMakeFiles/CMakeTmp'
+/home/lau/cmake-2.8.10.2/Bootstrap.cmk/cmake -E cmake_progress_report /home/lau/cmake-2.8.10.2/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec2495216547.dir/CheckIncludeFiles.c.o
+/usr/bin/gcc    -o CMakeFiles/cmTryCompileExec2495216547.dir/CheckIncludeFiles.c.o   -c /home/lau/cmake-2.8.10.2/CMakeFiles/CMakeTmp/CheckIncludeFiles.c
+/home/lau/cmake-2.8.10.2/CMakeFiles/CMakeTmp/CheckIncludeFiles.c:38:24: error: sys/sockio.h: No such file or directory
+gmake[1]: Leaving directory `/home/lau/cmake-2.8.10.2/CMakeFiles/CMakeTmp'
+gmake[1]: *** [CMakeFiles/cmTryCompileExec2495216547.dir/CheckIncludeFiles.c.o] Error 1
+gmake: *** [cmTryCompileExec2495216547/fast] Error 2
+
+Source:
+/* */
+#include <stdio.h>
+#include <stddef.h>
+#include <sys/types.h>
+#include <inttypes.h>
+#include <alloca.h>
+#include <arpa/inet.h>
+#include <dlfcn.h>
+#include <fcntl.h>
+#include <malloc.h>
+#include <memory.h>
+#include <netdb.h>
+#include <sys/poll.h>
+#include <assert.h>
+#include <limits.h>
+#include <sys/socket.h>
+#include <netinet/in.h>
+#include <net/if.h>
+#include <netinet/if_ether.h>
+#include <netinet/tcp.h>
+#include <sys/select.h>
+#include <utime.h>
+#include <netinet/in.h>
+#include <pwd.h>
+#include <sgtty.h>
+#include <stdint.h>
+#include <stdlib.h>
+#include <string.h>
+#include <strings.h>
+#include <sys/param.h>
+#include <sys/stat.h>
+#include <sys/time.h>
+#include <sys/resource.h>
+#include <termios.h>
+#include <termio.h>
+#include <time.h>
+#include <unistd.h>
+#include <sys/sockio.h>
+
+
+int main(){return 0;}
+
+Determining if files stdio.h;stddef.h;sys/types.h;inttypes.h;alloca.h;arpa/inet.h;dlfcn.h;fcntl.h;malloc.h;memory.h;netdb.h;sys/poll.h;assert.h;limits.h;sys/socket.h;netinet/in.h;net/if.h;netinet/if_ether.h;netinet/tcp.h;sys/select.h;utime.h;netinet/in.h;pwd.h;sgtty.h;stdint.h;stdlib.h;string.h;strings.h;sys/param.h;sys/stat.h;sys/time.h;sys/resource.h;termios.h;termio.h;time.h;unistd.h;x509.h exist failed with the following output:
+Change Dir: /home/lau/cmake-2.8.10.2/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/gmake "cmTryCompileExec1837590394/fast"
+gmake -f CMakeFiles/cmTryCompileExec1837590394.dir/build.make CMakeFiles/cmTryCompileExec1837590394.dir/build
+gmake[1]: Entering directory `/home/lau/cmake-2.8.10.2/CMakeFiles/CMakeTmp'
+/home/lau/cmake-2.8.10.2/Bootstrap.cmk/cmake -E cmake_progress_report /home/lau/cmake-2.8.10.2/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec1837590394.dir/CheckIncludeFiles.c.o
+/usr/bin/gcc    -o CMakeFiles/cmTryCompileExec1837590394.dir/CheckIncludeFiles.c.o   -c /home/lau/cmake-2.8.10.2/CMakeFiles/CMakeTmp/CheckIncludeFiles.c
+/home/lau/cmake-2.8.10.2/CMakeFiles/CMakeTmp/CheckIncludeFiles.c:38:18: error: x509.h: No such file or directory
+gmake[1]: Leaving directory `/home/lau/cmake-2.8.10.2/CMakeFiles/CMakeTmp'
+gmake[1]: *** [CMakeFiles/cmTryCompileExec1837590394.dir/CheckIncludeFiles.c.o] Error 1
+gmake: *** [cmTryCompileExec1837590394/fast] Error 2
+
+Source:
+/* */
+#include <stdio.h>
+#include <stddef.h>
+#include <sys/types.h>
+#include <inttypes.h>
+#include <alloca.h>
+#include <arpa/inet.h>
+#include <dlfcn.h>
+#include <fcntl.h>
+#include <malloc.h>
+#include <memory.h>
+#include <netdb.h>
+#include <sys/poll.h>
+#include <assert.h>
+#include <limits.h>
+#include <sys/socket.h>
+#include <netinet/in.h>
+#include <net/if.h>
+#include <netinet/if_ether.h>
+#include <netinet/tcp.h>
+#include <sys/select.h>
+#include <utime.h>
+#include <netinet/in.h>
+#include <pwd.h>
+#include <sgtty.h>
+#include <stdint.h>
+#include <stdlib.h>
+#include <string.h>
+#include <strings.h>
+#include <sys/param.h>
+#include <sys/stat.h>
+#include <sys/time.h>
+#include <sys/resource.h>
+#include <termios.h>
+#include <termio.h>
+#include <time.h>
+#include <unistd.h>
+#include <x509.h>
+
+
+int main(){return 0;}
+
+Determining if files stdio.h;stddef.h;sys/types.h;inttypes.h;alloca.h;arpa/inet.h;dlfcn.h;fcntl.h;malloc.h;memory.h;netdb.h;sys/poll.h;assert.h;limits.h;sys/socket.h;netinet/in.h;net/if.h;netinet/if_ether.h;netinet/tcp.h;sys/select.h;utime.h;netinet/in.h;pwd.h;sgtty.h;stdint.h;stdlib.h;string.h;strings.h;sys/param.h;sys/stat.h;sys/time.h;sys/resource.h;termios.h;termio.h;time.h;unistd.h;locale.h;setjmp.h;signal.h;sys/ioctl.h;sys/utsname.h;idn-free.h exist failed with the following output:
+Change Dir: /home/lau/cmake-2.8.10.2/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/gmake "cmTryCompileExec3865835927/fast"
+gmake -f CMakeFiles/cmTryCompileExec3865835927.dir/build.make CMakeFiles/cmTryCompileExec3865835927.dir/build
+gmake[1]: Entering directory `/home/lau/cmake-2.8.10.2/CMakeFiles/CMakeTmp'
+/home/lau/cmake-2.8.10.2/Bootstrap.cmk/cmake -E cmake_progress_report /home/lau/cmake-2.8.10.2/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec3865835927.dir/CheckIncludeFiles.c.o
+/usr/bin/gcc    -o CMakeFiles/cmTryCompileExec3865835927.dir/CheckIncludeFiles.c.o   -c /home/lau/cmake-2.8.10.2/CMakeFiles/CMakeTmp/CheckIncludeFiles.c
+/home/lau/cmake-2.8.10.2/CMakeFiles/CMakeTmp/CheckIncludeFiles.c:43:22: error: idn-free.h: No such file or directory
+gmake[1]: Leaving directory `/home/lau/cmake-2.8.10.2/CMakeFiles/CMakeTmp'
+gmake[1]: *** [CMakeFiles/cmTryCompileExec3865835927.dir/CheckIncludeFiles.c.o] Error 1
+gmake: *** [cmTryCompileExec3865835927/fast] Error 2
+
+Source:
+/* */
+#include <stdio.h>
+#include <stddef.h>
+#include <sys/types.h>
+#include <inttypes.h>
+#include <alloca.h>
+#include <arpa/inet.h>
+#include <dlfcn.h>
+#include <fcntl.h>
+#include <malloc.h>
+#include <memory.h>
+#include <netdb.h>
+#include <sys/poll.h>
+#include <assert.h>
+#include <limits.h>
+#include <sys/socket.h>
+#include <netinet/in.h>
+#include <net/if.h>
+#include <netinet/if_ether.h>
+#include <netinet/tcp.h>
+#include <sys/select.h>
+#include <utime.h>
+#include <netinet/in.h>
+#include <pwd.h>
+#include <sgtty.h>
+#include <stdint.h>
+#include <stdlib.h>
+#include <string.h>
+#include <strings.h>
+#include <sys/param.h>
+#include <sys/stat.h>
+#include <sys/time.h>
+#include <sys/resource.h>
+#include <termios.h>
+#include <termio.h>
+#include <time.h>
+#include <unistd.h>
+#include <locale.h>
+#include <setjmp.h>
+#include <signal.h>
+#include <sys/ioctl.h>
+#include <sys/utsname.h>
+#include <idn-free.h>
+
+
+int main(){return 0;}
+
+Determining if files stdio.h;stddef.h;sys/types.h;inttypes.h;alloca.h;arpa/inet.h;dlfcn.h;fcntl.h;malloc.h;memory.h;netdb.h;sys/poll.h;assert.h;limits.h;sys/socket.h;netinet/in.h;net/if.h;netinet/if_ether.h;netinet/tcp.h;sys/select.h;utime.h;netinet/in.h;pwd.h;sgtty.h;stdint.h;stdlib.h;string.h;strings.h;sys/param.h;sys/stat.h;sys/time.h;sys/resource.h;termios.h;termio.h;time.h;unistd.h;locale.h;setjmp.h;signal.h;sys/ioctl.h;sys/utsname.h;idna.h exist failed with the following output:
+Change Dir: /home/lau/cmake-2.8.10.2/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/gmake "cmTryCompileExec4202943181/fast"
+gmake -f CMakeFiles/cmTryCompileExec4202943181.dir/build.make CMakeFiles/cmTryCompileExec4202943181.dir/build
+gmake[1]: Entering directory `/home/lau/cmake-2.8.10.2/CMakeFiles/CMakeTmp'
+/home/lau/cmake-2.8.10.2/Bootstrap.cmk/cmake -E cmake_progress_report /home/lau/cmake-2.8.10.2/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec4202943181.dir/CheckIncludeFiles.c.o
+/usr/bin/gcc    -o CMakeFiles/cmTryCompileExec4202943181.dir/CheckIncludeFiles.c.o   -c /home/lau/cmake-2.8.10.2/CMakeFiles/CMakeTmp/CheckIncludeFiles.c
+/home/lau/cmake-2.8.10.2/CMakeFiles/CMakeTmp/CheckIncludeFiles.c:43:18: error: idna.h: No such file or directory
+gmake[1]: Leaving directory `/home/lau/cmake-2.8.10.2/CMakeFiles/CMakeTmp'
+gmake[1]: *** [CMakeFiles/cmTryCompileExec4202943181.dir/CheckIncludeFiles.c.o] Error 1
+gmake: *** [cmTryCompileExec4202943181/fast] Error 2
+
+Source:
+/* */
+#include <stdio.h>
+#include <stddef.h>
+#include <sys/types.h>
+#include <inttypes.h>
+#include <alloca.h>
+#include <arpa/inet.h>
+#include <dlfcn.h>
+#include <fcntl.h>
+#include <malloc.h>
+#include <memory.h>
+#include <netdb.h>
+#include <sys/poll.h>
+#include <assert.h>
+#include <limits.h>
+#include <sys/socket.h>
+#include <netinet/in.h>
+#include <net/if.h>
+#include <netinet/if_ether.h>
+#include <netinet/tcp.h>
+#include <sys/select.h>
+#include <utime.h>
+#include <netinet/in.h>
+#include <pwd.h>
+#include <sgtty.h>
+#include <stdint.h>
+#include <stdlib.h>
+#include <string.h>
+#include <strings.h>
+#include <sys/param.h>
+#include <sys/stat.h>
+#include <sys/time.h>
+#include <sys/resource.h>
+#include <termios.h>
+#include <termio.h>
+#include <time.h>
+#include <unistd.h>
+#include <locale.h>
+#include <setjmp.h>
+#include <signal.h>
+#include <sys/ioctl.h>
+#include <sys/utsname.h>
+#include <idna.h>
+
+
+int main(){return 0;}
+
+Determining if files stdio.h;stddef.h;sys/types.h;inttypes.h;alloca.h;arpa/inet.h;dlfcn.h;fcntl.h;malloc.h;memory.h;netdb.h;sys/poll.h;assert.h;limits.h;sys/socket.h;netinet/in.h;net/if.h;netinet/if_ether.h;netinet/tcp.h;sys/select.h;utime.h;netinet/in.h;pwd.h;sgtty.h;stdint.h;stdlib.h;string.h;strings.h;sys/param.h;sys/stat.h;sys/time.h;sys/resource.h;termios.h;termio.h;time.h;unistd.h;locale.h;setjmp.h;signal.h;sys/ioctl.h;sys/utsname.h;tld.h exist failed with the following output:
+Change Dir: /home/lau/cmake-2.8.10.2/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/gmake "cmTryCompileExec623890799/fast"
+gmake -f CMakeFiles/cmTryCompileExec623890799.dir/build.make CMakeFiles/cmTryCompileExec623890799.dir/build
+gmake[1]: Entering directory `/home/lau/cmake-2.8.10.2/CMakeFiles/CMakeTmp'
+/home/lau/cmake-2.8.10.2/Bootstrap.cmk/cmake -E cmake_progress_report /home/lau/cmake-2.8.10.2/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec623890799.dir/CheckIncludeFiles.c.o
+/usr/bin/gcc    -o CMakeFiles/cmTryCompileExec623890799.dir/CheckIncludeFiles.c.o   -c /home/lau/cmake-2.8.10.2/CMakeFiles/CMakeTmp/CheckIncludeFiles.c
+/home/lau/cmake-2.8.10.2/CMakeFiles/CMakeTmp/CheckIncludeFiles.c:43:17: error: tld.h: No such file or directory
+gmake[1]: Leaving directory `/home/lau/cmake-2.8.10.2/CMakeFiles/CMakeTmp'
+gmake[1]: *** [CMakeFiles/cmTryCompileExec623890799.dir/CheckIncludeFiles.c.o] Error 1
+gmake: *** [cmTryCompileExec623890799/fast] Error 2
+
+Source:
+/* */
+#include <stdio.h>
+#include <stddef.h>
+#include <sys/types.h>
+#include <inttypes.h>
+#include <alloca.h>
+#include <arpa/inet.h>
+#include <dlfcn.h>
+#include <fcntl.h>
+#include <malloc.h>
+#include <memory.h>
+#include <netdb.h>
+#include <sys/poll.h>
+#include <assert.h>
+#include <limits.h>
+#include <sys/socket.h>
+#include <netinet/in.h>
+#include <net/if.h>
+#include <netinet/if_ether.h>
+#include <netinet/tcp.h>
+#include <sys/select.h>
+#include <utime.h>
+#include <netinet/in.h>
+#include <pwd.h>
+#include <sgtty.h>
+#include <stdint.h>
+#include <stdlib.h>
+#include <string.h>
+#include <strings.h>
+#include <sys/param.h>
+#include <sys/stat.h>
+#include <sys/time.h>
+#include <sys/resource.h>
+#include <termios.h>
+#include <termio.h>
+#include <time.h>
+#include <unistd.h>
+#include <locale.h>
+#include <setjmp.h>
+#include <signal.h>
+#include <sys/ioctl.h>
+#include <sys/utsname.h>
+#include <tld.h>
+
+
+int main(){return 0;}
+
+Determining if files stdio.h;stddef.h;sys/types.h;inttypes.h;alloca.h;arpa/inet.h;dlfcn.h;fcntl.h;malloc.h;memory.h;netdb.h;sys/poll.h;assert.h;limits.h;sys/socket.h;netinet/in.h;net/if.h;netinet/if_ether.h;netinet/tcp.h;sys/select.h;utime.h;netinet/in.h;pwd.h;sgtty.h;stdint.h;stdlib.h;string.h;strings.h;sys/param.h;sys/stat.h;sys/time.h;sys/resource.h;termios.h;termio.h;time.h;unistd.h;locale.h;setjmp.h;signal.h;sys/ioctl.h;sys/utsname.h;arpa/tftp.h;errno.h;libgen.h;sys/filio.h exist failed with the following output:
+Change Dir: /home/lau/cmake-2.8.10.2/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/gmake "cmTryCompileExec1680940169/fast"
+gmake -f CMakeFiles/cmTryCompileExec1680940169.dir/build.make CMakeFiles/cmTryCompileExec1680940169.dir/build
+gmake[1]: Entering directory `/home/lau/cmake-2.8.10.2/CMakeFiles/CMakeTmp'
+/home/lau/cmake-2.8.10.2/Bootstrap.cmk/cmake -E cmake_progress_report /home/lau/cmake-2.8.10.2/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec1680940169.dir/CheckIncludeFiles.c.o
+/usr/bin/gcc    -o CMakeFiles/cmTryCompileExec1680940169.dir/CheckIncludeFiles.c.o   -c /home/lau/cmake-2.8.10.2/CMakeFiles/CMakeTmp/CheckIncludeFiles.c
+/home/lau/cmake-2.8.10.2/CMakeFiles/CMakeTmp/CheckIncludeFiles.c:46:23: error: sys/filio.h: No such file or directory
+gmake[1]: Leaving directory `/home/lau/cmake-2.8.10.2/CMakeFiles/CMakeTmp'
+gmake[1]: *** [CMakeFiles/cmTryCompileExec1680940169.dir/CheckIncludeFiles.c.o] Error 1
+gmake: *** [cmTryCompileExec1680940169/fast] Error 2
+
+Source:
+/* */
+#include <stdio.h>
+#include <stddef.h>
+#include <sys/types.h>
+#include <inttypes.h>
+#include <alloca.h>
+#include <arpa/inet.h>
+#include <dlfcn.h>
+#include <fcntl.h>
+#include <malloc.h>
+#include <memory.h>
+#include <netdb.h>
+#include <sys/poll.h>
+#include <assert.h>
+#include <limits.h>
+#include <sys/socket.h>
+#include <netinet/in.h>
+#include <net/if.h>
+#include <netinet/if_ether.h>
+#include <netinet/tcp.h>
+#include <sys/select.h>
+#include <utime.h>
+#include <netinet/in.h>
+#include <pwd.h>
+#include <sgtty.h>
+#include <stdint.h>
+#include <stdlib.h>
+#include <string.h>
+#include <strings.h>
+#include <sys/param.h>
+#include <sys/stat.h>
+#include <sys/time.h>
+#include <sys/resource.h>
+#include <termios.h>
+#include <termio.h>
+#include <time.h>
+#include <unistd.h>
+#include <locale.h>
+#include <setjmp.h>
+#include <signal.h>
+#include <sys/ioctl.h>
+#include <sys/utsname.h>
+#include <arpa/tftp.h>
+#include <errno.h>
+#include <libgen.h>
+#include <sys/filio.h>
+
+
+int main(){return 0;}
+
+Determining size of __int64 failed with the following output:
+Change Dir: /home/lau/cmake-2.8.10.2/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/gmake "cmTryCompileExec843770812/fast"
+gmake -f CMakeFiles/cmTryCompileExec843770812.dir/build.make CMakeFiles/cmTryCompileExec843770812.dir/build
+gmake[1]: Entering directory `/home/lau/cmake-2.8.10.2/CMakeFiles/CMakeTmp'
+/home/lau/cmake-2.8.10.2/Bootstrap.cmk/cmake -E cmake_progress_report /home/lau/cmake-2.8.10.2/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec843770812.dir/SIZEOF___INT64.c.o
+/usr/bin/gcc    -o CMakeFiles/cmTryCompileExec843770812.dir/SIZEOF___INT64.c.o   -c /home/lau/cmake-2.8.10.2/CMakeFiles/CheckTypeSize/SIZEOF___INT64.c
+/home/lau/cmake-2.8.10.2/CMakeFiles/CheckTypeSize/SIZEOF___INT64.c:19: error: ‘__int64’ undeclared here (not in a function)
+gmake[1]: Leaving directory `/home/lau/cmake-2.8.10.2/CMakeFiles/CMakeTmp'
+gmake[1]: *** [CMakeFiles/cmTryCompileExec843770812.dir/SIZEOF___INT64.c.o] Error 1
+gmake: *** [cmTryCompileExec843770812/fast] Error 2
+
+/home/lau/cmake-2.8.10.2/CMakeFiles/CheckTypeSize/SIZEOF___INT64.c:
+#include <sys/types.h>
+#include <stdint.h>
+#include <stddef.h>
+
+
+#undef KEY
+#if defined(__i386)
+# define KEY '_','_','i','3','8','6'
+#elif defined(__x86_64)
+# define KEY '_','_','x','8','6','_','6','4'
+#elif defined(__ppc__)
+# define KEY '_','_','p','p','c','_','_'
+#elif defined(__ppc64__)
+# define KEY '_','_','p','p','c','6','4','_','_'
+#endif
+
+#define SIZE (sizeof(__int64))
+char info_size[] =  {'I', 'N', 'F', 'O', ':', 's','i','z','e','[',
+  ('0' + ((SIZE / 10000)%10)),
+  ('0' + ((SIZE / 1000)%10)),
+  ('0' + ((SIZE / 100)%10)),
+  ('0' + ((SIZE / 10)%10)),
+  ('0' +  (SIZE    % 10)),
+  ']',
+#ifdef KEY
+  ' ','k','e','y','[', KEY, ']',
+#endif
+  '\0'};
+
+#ifdef __CLASSIC_C__
+int main(argc, argv) int argc; char *argv[];
+#else
+int main(int argc, char *argv[])
+#endif
+{
+  int require = 0;
+  require += info_size[argc];
+  (void)argv;
+  return require;
+}
+
+
+Determining if the stricmp exist failed with the following output:
+Change Dir: /home/lau/cmake-2.8.10.2/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/gmake "cmTryCompileExec3946338527/fast"
+gmake -f CMakeFiles/cmTryCompileExec3946338527.dir/build.make CMakeFiles/cmTryCompileExec3946338527.dir/build
+gmake[1]: Entering directory `/home/lau/cmake-2.8.10.2/CMakeFiles/CMakeTmp'
+/home/lau/cmake-2.8.10.2/Bootstrap.cmk/cmake -E cmake_progress_report /home/lau/cmake-2.8.10.2/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec3946338527.dir/CheckSymbolExists.c.o
+/usr/bin/gcc    -o CMakeFiles/cmTryCompileExec3946338527.dir/CheckSymbolExists.c.o   -c /home/lau/cmake-2.8.10.2/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+/home/lau/cmake-2.8.10.2/CMakeFiles/CMakeTmp/CheckSymbolExists.c: In function ‘main’:
+/home/lau/cmake-2.8.10.2/CMakeFiles/CMakeTmp/CheckSymbolExists.c:51: error: ‘stricmp’ undeclared (first use in this function)
+/home/lau/cmake-2.8.10.2/CMakeFiles/CMakeTmp/CheckSymbolExists.c:51: error: (Each undeclared identifier is reported only once
+/home/lau/cmake-2.8.10.2/CMakeFiles/CMakeTmp/CheckSymbolExists.c:51: error: for each function it appears in.)
+gmake[1]: Leaving directory `/home/lau/cmake-2.8.10.2/CMakeFiles/CMakeTmp'
+gmake[1]: *** [CMakeFiles/cmTryCompileExec3946338527.dir/CheckSymbolExists.c.o] Error 1
+gmake: *** [cmTryCompileExec3946338527/fast] Error 2
+
+File /home/lau/cmake-2.8.10.2/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <stdio.h>
+#include <stddef.h>
+#include <sys/types.h>
+#include <inttypes.h>
+#include <alloca.h>
+#include <arpa/inet.h>
+#include <dlfcn.h>
+#include <fcntl.h>
+#include <malloc.h>
+#include <memory.h>
+#include <netdb.h>
+#include <sys/poll.h>
+#include <assert.h>
+#include <limits.h>
+#include <sys/socket.h>
+#include <netinet/in.h>
+#include <net/if.h>
+#include <netinet/if_ether.h>
+#include <netinet/tcp.h>
+#include <sys/select.h>
+#include <utime.h>
+#include <netinet/in.h>
+#include <pwd.h>
+#include <sgtty.h>
+#include <stdint.h>
+#include <stdlib.h>
+#include <string.h>
+#include <strings.h>
+#include <sys/param.h>
+#include <sys/stat.h>
+#include <sys/time.h>
+#include <sys/resource.h>
+#include <termios.h>
+#include <termio.h>
+#include <time.h>
+#include <unistd.h>
+#include <locale.h>
+#include <setjmp.h>
+#include <signal.h>
+#include <sys/ioctl.h>
+#include <sys/utsname.h>
+#include <arpa/tftp.h>
+#include <errno.h>
+#include <libgen.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef stricmp
+  return ((int*)(&stricmp))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+
+Determining if the strcmpi exist failed with the following output:
+Change Dir: /home/lau/cmake-2.8.10.2/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/gmake "cmTryCompileExec3253283936/fast"
+gmake -f CMakeFiles/cmTryCompileExec3253283936.dir/build.make CMakeFiles/cmTryCompileExec3253283936.dir/build
+gmake[1]: Entering directory `/home/lau/cmake-2.8.10.2/CMakeFiles/CMakeTmp'
+/home/lau/cmake-2.8.10.2/Bootstrap.cmk/cmake -E cmake_progress_report /home/lau/cmake-2.8.10.2/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec3253283936.dir/CheckSymbolExists.c.o
+/usr/bin/gcc    -o CMakeFiles/cmTryCompileExec3253283936.dir/CheckSymbolExists.c.o   -c /home/lau/cmake-2.8.10.2/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+/home/lau/cmake-2.8.10.2/CMakeFiles/CMakeTmp/CheckSymbolExists.c: In function ‘main’:
+/home/lau/cmake-2.8.10.2/CMakeFiles/CMakeTmp/CheckSymbolExists.c:51: error: ‘strcmpi’ undeclared (first use in this function)
+/home/lau/cmake-2.8.10.2/CMakeFiles/CMakeTmp/CheckSymbolExists.c:51: error: (Each undeclared identifier is reported only once
+/home/lau/cmake-2.8.10.2/CMakeFiles/CMakeTmp/CheckSymbolExists.c:51: error: for each function it appears in.)
+gmake[1]: Leaving directory `/home/lau/cmake-2.8.10.2/CMakeFiles/CMakeTmp'
+gmake[1]: *** [CMakeFiles/cmTryCompileExec3253283936.dir/CheckSymbolExists.c.o] Error 1
+gmake: *** [cmTryCompileExec3253283936/fast] Error 2
+
+File /home/lau/cmake-2.8.10.2/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <stdio.h>
+#include <stddef.h>
+#include <sys/types.h>
+#include <inttypes.h>
+#include <alloca.h>
+#include <arpa/inet.h>
+#include <dlfcn.h>
+#include <fcntl.h>
+#include <malloc.h>
+#include <memory.h>
+#include <netdb.h>
+#include <sys/poll.h>
+#include <assert.h>
+#include <limits.h>
+#include <sys/socket.h>
+#include <netinet/in.h>
+#include <net/if.h>
+#include <netinet/if_ether.h>
+#include <netinet/tcp.h>
+#include <sys/select.h>
+#include <utime.h>
+#include <netinet/in.h>
+#include <pwd.h>
+#include <sgtty.h>
+#include <stdint.h>
+#include <stdlib.h>
+#include <string.h>
+#include <strings.h>
+#include <sys/param.h>
+#include <sys/stat.h>
+#include <sys/time.h>
+#include <sys/resource.h>
+#include <termios.h>
+#include <termio.h>
+#include <time.h>
+#include <unistd.h>
+#include <locale.h>
+#include <setjmp.h>
+#include <signal.h>
+#include <sys/ioctl.h>
+#include <sys/utsname.h>
+#include <arpa/tftp.h>
+#include <errno.h>
+#include <libgen.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef strcmpi
+  return ((int*)(&strcmpi))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+
+Determining if the strncmpi exist failed with the following output:
+Change Dir: /home/lau/cmake-2.8.10.2/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/gmake "cmTryCompileExec3168476457/fast"
+gmake -f CMakeFiles/cmTryCompileExec3168476457.dir/build.make CMakeFiles/cmTryCompileExec3168476457.dir/build
+gmake[1]: Entering directory `/home/lau/cmake-2.8.10.2/CMakeFiles/CMakeTmp'
+/home/lau/cmake-2.8.10.2/Bootstrap.cmk/cmake -E cmake_progress_report /home/lau/cmake-2.8.10.2/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec3168476457.dir/CheckSymbolExists.c.o
+/usr/bin/gcc    -o CMakeFiles/cmTryCompileExec3168476457.dir/CheckSymbolExists.c.o   -c /home/lau/cmake-2.8.10.2/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+/home/lau/cmake-2.8.10.2/CMakeFiles/CMakeTmp/CheckSymbolExists.c: In function ‘main’:
+/home/lau/cmake-2.8.10.2/CMakeFiles/CMakeTmp/CheckSymbolExists.c:51: error: ‘strncmpi’ undeclared (first use in this function)
+/home/lau/cmake-2.8.10.2/CMakeFiles/CMakeTmp/CheckSymbolExists.c:51: error: (Each undeclared identifier is reported only once
+/home/lau/cmake-2.8.10.2/CMakeFiles/CMakeTmp/CheckSymbolExists.c:51: error: for each function it appears in.)
+gmake[1]: Leaving directory `/home/lau/cmake-2.8.10.2/CMakeFiles/CMakeTmp'
+gmake[1]: *** [CMakeFiles/cmTryCompileExec3168476457.dir/CheckSymbolExists.c.o] Error 1
+gmake: *** [cmTryCompileExec3168476457/fast] Error 2
+
+File /home/lau/cmake-2.8.10.2/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <stdio.h>
+#include <stddef.h>
+#include <sys/types.h>
+#include <inttypes.h>
+#include <alloca.h>
+#include <arpa/inet.h>
+#include <dlfcn.h>
+#include <fcntl.h>
+#include <malloc.h>
+#include <memory.h>
+#include <netdb.h>
+#include <sys/poll.h>
+#include <assert.h>
+#include <limits.h>
+#include <sys/socket.h>
+#include <netinet/in.h>
+#include <net/if.h>
+#include <netinet/if_ether.h>
+#include <netinet/tcp.h>
+#include <sys/select.h>
+#include <utime.h>
+#include <netinet/in.h>
+#include <pwd.h>
+#include <sgtty.h>
+#include <stdint.h>
+#include <stdlib.h>
+#include <string.h>
+#include <strings.h>
+#include <sys/param.h>
+#include <sys/stat.h>
+#include <sys/time.h>
+#include <sys/resource.h>
+#include <termios.h>
+#include <termio.h>
+#include <time.h>
+#include <unistd.h>
+#include <locale.h>
+#include <setjmp.h>
+#include <signal.h>
+#include <sys/ioctl.h>
+#include <sys/utsname.h>
+#include <arpa/tftp.h>
+#include <errno.h>
+#include <libgen.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef strncmpi
+  return ((int*)(&strncmpi))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+
+Determining if the inet_ntoa_r exist failed with the following output:
+Change Dir: /home/lau/cmake-2.8.10.2/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/gmake "cmTryCompileExec2412897097/fast"
+gmake -f CMakeFiles/cmTryCompileExec2412897097.dir/build.make CMakeFiles/cmTryCompileExec2412897097.dir/build
+gmake[1]: Entering directory `/home/lau/cmake-2.8.10.2/CMakeFiles/CMakeTmp'
+/home/lau/cmake-2.8.10.2/Bootstrap.cmk/cmake -E cmake_progress_report /home/lau/cmake-2.8.10.2/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec2412897097.dir/CheckSymbolExists.c.o
+/usr/bin/gcc    -o CMakeFiles/cmTryCompileExec2412897097.dir/CheckSymbolExists.c.o   -c /home/lau/cmake-2.8.10.2/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+/home/lau/cmake-2.8.10.2/CMakeFiles/CMakeTmp/CheckSymbolExists.c: In function ‘main’:
+/home/lau/cmake-2.8.10.2/CMakeFiles/CMakeTmp/CheckSymbolExists.c:51: error: ‘inet_ntoa_r’ undeclared (first use in this function)
+/home/lau/cmake-2.8.10.2/CMakeFiles/CMakeTmp/CheckSymbolExists.c:51: error: (Each undeclared identifier is reported only once
+/home/lau/cmake-2.8.10.2/CMakeFiles/CMakeTmp/CheckSymbolExists.c:51: error: for each function it appears in.)
+gmake[1]: Leaving directory `/home/lau/cmake-2.8.10.2/CMakeFiles/CMakeTmp'
+gmake[1]: *** [CMakeFiles/cmTryCompileExec2412897097.dir/CheckSymbolExists.c.o] Error 1
+gmake: *** [cmTryCompileExec2412897097/fast] Error 2
+
+File /home/lau/cmake-2.8.10.2/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <stdio.h>
+#include <stddef.h>
+#include <sys/types.h>
+#include <inttypes.h>
+#include <alloca.h>
+#include <arpa/inet.h>
+#include <dlfcn.h>
+#include <fcntl.h>
+#include <malloc.h>
+#include <memory.h>
+#include <netdb.h>
+#include <sys/poll.h>
+#include <assert.h>
+#include <limits.h>
+#include <sys/socket.h>
+#include <netinet/in.h>
+#include <net/if.h>
+#include <netinet/if_ether.h>
+#include <netinet/tcp.h>
+#include <sys/select.h>
+#include <utime.h>
+#include <netinet/in.h>
+#include <pwd.h>
+#include <sgtty.h>
+#include <stdint.h>
+#include <stdlib.h>
+#include <string.h>
+#include <strings.h>
+#include <sys/param.h>
+#include <sys/stat.h>
+#include <sys/time.h>
+#include <sys/resource.h>
+#include <termios.h>
+#include <termio.h>
+#include <time.h>
+#include <unistd.h>
+#include <locale.h>
+#include <setjmp.h>
+#include <signal.h>
+#include <sys/ioctl.h>
+#include <sys/utsname.h>
+#include <arpa/tftp.h>
+#include <errno.h>
+#include <libgen.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef inet_ntoa_r
+  return ((int*)(&inet_ntoa_r))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+
+Determining if the closesocket exist failed with the following output:
+Change Dir: /home/lau/cmake-2.8.10.2/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/gmake "cmTryCompileExec2943106734/fast"
+gmake -f CMakeFiles/cmTryCompileExec2943106734.dir/build.make CMakeFiles/cmTryCompileExec2943106734.dir/build
+gmake[1]: Entering directory `/home/lau/cmake-2.8.10.2/CMakeFiles/CMakeTmp'
+/home/lau/cmake-2.8.10.2/Bootstrap.cmk/cmake -E cmake_progress_report /home/lau/cmake-2.8.10.2/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec2943106734.dir/CheckSymbolExists.c.o
+/usr/bin/gcc    -o CMakeFiles/cmTryCompileExec2943106734.dir/CheckSymbolExists.c.o   -c /home/lau/cmake-2.8.10.2/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+/home/lau/cmake-2.8.10.2/CMakeFiles/CMakeTmp/CheckSymbolExists.c: In function ‘main’:
+/home/lau/cmake-2.8.10.2/CMakeFiles/CMakeTmp/CheckSymbolExists.c:51: error: ‘closesocket’ undeclared (first use in this function)
+/home/lau/cmake-2.8.10.2/CMakeFiles/CMakeTmp/CheckSymbolExists.c:51: error: (Each undeclared identifier is reported only once
+/home/lau/cmake-2.8.10.2/CMakeFiles/CMakeTmp/CheckSymbolExists.c:51: error: for each function it appears in.)
+gmake[1]: Leaving directory `/home/lau/cmake-2.8.10.2/CMakeFiles/CMakeTmp'
+gmake[1]: *** [CMakeFiles/cmTryCompileExec2943106734.dir/CheckSymbolExists.c.o] Error 1
+gmake: *** [cmTryCompileExec2943106734/fast] Error 2
+
+File /home/lau/cmake-2.8.10.2/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <stdio.h>
+#include <stddef.h>
+#include <sys/types.h>
+#include <inttypes.h>
+#include <alloca.h>
+#include <arpa/inet.h>
+#include <dlfcn.h>
+#include <fcntl.h>
+#include <malloc.h>
+#include <memory.h>
+#include <netdb.h>
+#include <sys/poll.h>
+#include <assert.h>
+#include <limits.h>
+#include <sys/socket.h>
+#include <netinet/in.h>
+#include <net/if.h>
+#include <netinet/if_ether.h>
+#include <netinet/tcp.h>
+#include <sys/select.h>
+#include <utime.h>
+#include <netinet/in.h>
+#include <pwd.h>
+#include <sgtty.h>
+#include <stdint.h>
+#include <stdlib.h>
+#include <string.h>
+#include <strings.h>
+#include <sys/param.h>
+#include <sys/stat.h>
+#include <sys/time.h>
+#include <sys/resource.h>
+#include <termios.h>
+#include <termio.h>
+#include <time.h>
+#include <unistd.h>
+#include <locale.h>
+#include <setjmp.h>
+#include <signal.h>
+#include <sys/ioctl.h>
+#include <sys/utsname.h>
+#include <arpa/tftp.h>
+#include <errno.h>
+#include <libgen.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef closesocket
+  return ((int*)(&closesocket))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+
+Determining if the getpass_r exist failed with the following output:
+Change Dir: /home/lau/cmake-2.8.10.2/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/gmake "cmTryCompileExec2669833795/fast"
+gmake -f CMakeFiles/cmTryCompileExec2669833795.dir/build.make CMakeFiles/cmTryCompileExec2669833795.dir/build
+gmake[1]: Entering directory `/home/lau/cmake-2.8.10.2/CMakeFiles/CMakeTmp'
+/home/lau/cmake-2.8.10.2/Bootstrap.cmk/cmake -E cmake_progress_report /home/lau/cmake-2.8.10.2/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec2669833795.dir/CheckSymbolExists.c.o
+/usr/bin/gcc    -o CMakeFiles/cmTryCompileExec2669833795.dir/CheckSymbolExists.c.o   -c /home/lau/cmake-2.8.10.2/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+/home/lau/cmake-2.8.10.2/CMakeFiles/CMakeTmp/CheckSymbolExists.c: In function ‘main’:
+/home/lau/cmake-2.8.10.2/CMakeFiles/CMakeTmp/CheckSymbolExists.c:51: error: ‘getpass_r’ undeclared (first use in this function)
+/home/lau/cmake-2.8.10.2/CMakeFiles/CMakeTmp/CheckSymbolExists.c:51: error: (Each undeclared identifier is reported only once
+/home/lau/cmake-2.8.10.2/CMakeFiles/CMakeTmp/CheckSymbolExists.c:51: error: for each function it appears in.)
+gmake[1]: Leaving directory `/home/lau/cmake-2.8.10.2/CMakeFiles/CMakeTmp'
+gmake[1]: *** [CMakeFiles/cmTryCompileExec2669833795.dir/CheckSymbolExists.c.o] Error 1
+gmake: *** [cmTryCompileExec2669833795/fast] Error 2
+
+File /home/lau/cmake-2.8.10.2/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <stdio.h>
+#include <stddef.h>
+#include <sys/types.h>
+#include <inttypes.h>
+#include <alloca.h>
+#include <arpa/inet.h>
+#include <dlfcn.h>
+#include <fcntl.h>
+#include <malloc.h>
+#include <memory.h>
+#include <netdb.h>
+#include <sys/poll.h>
+#include <assert.h>
+#include <limits.h>
+#include <sys/socket.h>
+#include <netinet/in.h>
+#include <net/if.h>
+#include <netinet/if_ether.h>
+#include <netinet/tcp.h>
+#include <sys/select.h>
+#include <utime.h>
+#include <netinet/in.h>
+#include <pwd.h>
+#include <sgtty.h>
+#include <stdint.h>
+#include <stdlib.h>
+#include <string.h>
+#include <strings.h>
+#include <sys/param.h>
+#include <sys/stat.h>
+#include <sys/time.h>
+#include <sys/resource.h>
+#include <termios.h>
+#include <termio.h>
+#include <time.h>
+#include <unistd.h>
+#include <locale.h>
+#include <setjmp.h>
+#include <signal.h>
+#include <sys/ioctl.h>
+#include <sys/utsname.h>
+#include <arpa/tftp.h>
+#include <errno.h>
+#include <libgen.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef getpass_r
+  return ((int*)(&getpass_r))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+
+Determining if the strlcat exist failed with the following output:
+Change Dir: /home/lau/cmake-2.8.10.2/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/gmake "cmTryCompileExec795907965/fast"
+gmake -f CMakeFiles/cmTryCompileExec795907965.dir/build.make CMakeFiles/cmTryCompileExec795907965.dir/build
+gmake[1]: Entering directory `/home/lau/cmake-2.8.10.2/CMakeFiles/CMakeTmp'
+/home/lau/cmake-2.8.10.2/Bootstrap.cmk/cmake -E cmake_progress_report /home/lau/cmake-2.8.10.2/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec795907965.dir/CheckSymbolExists.c.o
+/usr/bin/gcc    -o CMakeFiles/cmTryCompileExec795907965.dir/CheckSymbolExists.c.o   -c /home/lau/cmake-2.8.10.2/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+/home/lau/cmake-2.8.10.2/CMakeFiles/CMakeTmp/CheckSymbolExists.c: In function ‘main’:
+/home/lau/cmake-2.8.10.2/CMakeFiles/CMakeTmp/CheckSymbolExists.c:51: error: ‘strlcat’ undeclared (first use in this function)
+/home/lau/cmake-2.8.10.2/CMakeFiles/CMakeTmp/CheckSymbolExists.c:51: error: (Each undeclared identifier is reported only once
+/home/lau/cmake-2.8.10.2/CMakeFiles/CMakeTmp/CheckSymbolExists.c:51: error: for each function it appears in.)
+gmake[1]: Leaving directory `/home/lau/cmake-2.8.10.2/CMakeFiles/CMakeTmp'
+gmake[1]: *** [CMakeFiles/cmTryCompileExec795907965.dir/CheckSymbolExists.c.o] Error 1
+gmake: *** [cmTryCompileExec795907965/fast] Error 2
+
+File /home/lau/cmake-2.8.10.2/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <stdio.h>
+#include <stddef.h>
+#include <sys/types.h>
+#include <inttypes.h>
+#include <alloca.h>
+#include <arpa/inet.h>
+#include <dlfcn.h>
+#include <fcntl.h>
+#include <malloc.h>
+#include <memory.h>
+#include <netdb.h>
+#include <sys/poll.h>
+#include <assert.h>
+#include <limits.h>
+#include <sys/socket.h>
+#include <netinet/in.h>
+#include <net/if.h>
+#include <netinet/if_ether.h>
+#include <netinet/tcp.h>
+#include <sys/select.h>
+#include <utime.h>
+#include <netinet/in.h>
+#include <pwd.h>
+#include <sgtty.h>
+#include <stdint.h>
+#include <stdlib.h>
+#include <string.h>
+#include <strings.h>
+#include <sys/param.h>
+#include <sys/stat.h>
+#include <sys/time.h>
+#include <sys/resource.h>
+#include <termios.h>
+#include <termio.h>
+#include <time.h>
+#include <unistd.h>
+#include <locale.h>
+#include <setjmp.h>
+#include <signal.h>
+#include <sys/ioctl.h>
+#include <sys/utsname.h>
+#include <arpa/tftp.h>
+#include <errno.h>
+#include <libgen.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef strlcat
+  return ((int*)(&strlcat))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+
+Determining if the _strtoi64 exist failed with the following output:
+Change Dir: /home/lau/cmake-2.8.10.2/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/gmake "cmTryCompileExec3425880974/fast"
+gmake -f CMakeFiles/cmTryCompileExec3425880974.dir/build.make CMakeFiles/cmTryCompileExec3425880974.dir/build
+gmake[1]: Entering directory `/home/lau/cmake-2.8.10.2/CMakeFiles/CMakeTmp'
+/home/lau/cmake-2.8.10.2/Bootstrap.cmk/cmake -E cmake_progress_report /home/lau/cmake-2.8.10.2/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec3425880974.dir/CheckSymbolExists.c.o
+/usr/bin/gcc    -o CMakeFiles/cmTryCompileExec3425880974.dir/CheckSymbolExists.c.o   -c /home/lau/cmake-2.8.10.2/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+/home/lau/cmake-2.8.10.2/CMakeFiles/CMakeTmp/CheckSymbolExists.c: In function ‘main’:
+/home/lau/cmake-2.8.10.2/CMakeFiles/CMakeTmp/CheckSymbolExists.c:51: error: ‘_strtoi64’ undeclared (first use in this function)
+/home/lau/cmake-2.8.10.2/CMakeFiles/CMakeTmp/CheckSymbolExists.c:51: error: (Each undeclared identifier is reported only once
+/home/lau/cmake-2.8.10.2/CMakeFiles/CMakeTmp/CheckSymbolExists.c:51: error: for each function it appears in.)
+gmake[1]: Leaving directory `/home/lau/cmake-2.8.10.2/CMakeFiles/CMakeTmp'
+gmake[1]: *** [CMakeFiles/cmTryCompileExec3425880974.dir/CheckSymbolExists.c.o] Error 1
+gmake: *** [cmTryCompileExec3425880974/fast] Error 2
+
+File /home/lau/cmake-2.8.10.2/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <stdio.h>
+#include <stddef.h>
+#include <sys/types.h>
+#include <inttypes.h>
+#include <alloca.h>
+#include <arpa/inet.h>
+#include <dlfcn.h>
+#include <fcntl.h>
+#include <malloc.h>
+#include <memory.h>
+#include <netdb.h>
+#include <sys/poll.h>
+#include <assert.h>
+#include <limits.h>
+#include <sys/socket.h>
+#include <netinet/in.h>
+#include <net/if.h>
+#include <netinet/if_ether.h>
+#include <netinet/tcp.h>
+#include <sys/select.h>
+#include <utime.h>
+#include <netinet/in.h>
+#include <pwd.h>
+#include <sgtty.h>
+#include <stdint.h>
+#include <stdlib.h>
+#include <string.h>
+#include <strings.h>
+#include <sys/param.h>
+#include <sys/stat.h>
+#include <sys/time.h>
+#include <sys/resource.h>
+#include <termios.h>
+#include <termio.h>
+#include <time.h>
+#include <unistd.h>
+#include <locale.h>
+#include <setjmp.h>
+#include <signal.h>
+#include <sys/ioctl.h>
+#include <sys/utsname.h>
+#include <arpa/tftp.h>
+#include <errno.h>
+#include <libgen.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef _strtoi64
+  return ((int*)(&_strtoi64))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+
+Determining if the idn_free exist failed with the following output:
+Change Dir: /home/lau/cmake-2.8.10.2/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/gmake "cmTryCompileExec2710488849/fast"
+gmake -f CMakeFiles/cmTryCompileExec2710488849.dir/build.make CMakeFiles/cmTryCompileExec2710488849.dir/build
+gmake[1]: Entering directory `/home/lau/cmake-2.8.10.2/CMakeFiles/CMakeTmp'
+/home/lau/cmake-2.8.10.2/Bootstrap.cmk/cmake -E cmake_progress_report /home/lau/cmake-2.8.10.2/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec2710488849.dir/CheckSymbolExists.c.o
+/usr/bin/gcc    -o CMakeFiles/cmTryCompileExec2710488849.dir/CheckSymbolExists.c.o   -c /home/lau/cmake-2.8.10.2/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+/home/lau/cmake-2.8.10.2/CMakeFiles/CMakeTmp/CheckSymbolExists.c: In function ‘main’:
+/home/lau/cmake-2.8.10.2/CMakeFiles/CMakeTmp/CheckSymbolExists.c:51: error: ‘idn_free’ undeclared (first use in this function)
+/home/lau/cmake-2.8.10.2/CMakeFiles/CMakeTmp/CheckSymbolExists.c:51: error: (Each undeclared identifier is reported only once
+/home/lau/cmake-2.8.10.2/CMakeFiles/CMakeTmp/CheckSymbolExists.c:51: error: for each function it appears in.)
+gmake[1]: Leaving directory `/home/lau/cmake-2.8.10.2/CMakeFiles/CMakeTmp'
+gmake[1]: *** [CMakeFiles/cmTryCompileExec2710488849.dir/CheckSymbolExists.c.o] Error 1
+gmake: *** [cmTryCompileExec2710488849/fast] Error 2
+
+File /home/lau/cmake-2.8.10.2/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <stdio.h>
+#include <stddef.h>
+#include <sys/types.h>
+#include <inttypes.h>
+#include <alloca.h>
+#include <arpa/inet.h>
+#include <dlfcn.h>
+#include <fcntl.h>
+#include <malloc.h>
+#include <memory.h>
+#include <netdb.h>
+#include <sys/poll.h>
+#include <assert.h>
+#include <limits.h>
+#include <sys/socket.h>
+#include <netinet/in.h>
+#include <net/if.h>
+#include <netinet/if_ether.h>
+#include <netinet/tcp.h>
+#include <sys/select.h>
+#include <utime.h>
+#include <netinet/in.h>
+#include <pwd.h>
+#include <sgtty.h>
+#include <stdint.h>
+#include <stdlib.h>
+#include <string.h>
+#include <strings.h>
+#include <sys/param.h>
+#include <sys/stat.h>
+#include <sys/time.h>
+#include <sys/resource.h>
+#include <termios.h>
+#include <termio.h>
+#include <time.h>
+#include <unistd.h>
+#include <locale.h>
+#include <setjmp.h>
+#include <signal.h>
+#include <sys/ioctl.h>
+#include <sys/utsname.h>
+#include <arpa/tftp.h>
+#include <errno.h>
+#include <libgen.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef idn_free
+  return ((int*)(&idn_free))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+
+Determining if the idna_strerror exist failed with the following output:
+Change Dir: /home/lau/cmake-2.8.10.2/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/gmake "cmTryCompileExec4040251027/fast"
+gmake -f CMakeFiles/cmTryCompileExec4040251027.dir/build.make CMakeFiles/cmTryCompileExec4040251027.dir/build
+gmake[1]: Entering directory `/home/lau/cmake-2.8.10.2/CMakeFiles/CMakeTmp'
+/home/lau/cmake-2.8.10.2/Bootstrap.cmk/cmake -E cmake_progress_report /home/lau/cmake-2.8.10.2/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec4040251027.dir/CheckSymbolExists.c.o
+/usr/bin/gcc    -o CMakeFiles/cmTryCompileExec4040251027.dir/CheckSymbolExists.c.o   -c /home/lau/cmake-2.8.10.2/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+/home/lau/cmake-2.8.10.2/CMakeFiles/CMakeTmp/CheckSymbolExists.c: In function ‘main’:
+/home/lau/cmake-2.8.10.2/CMakeFiles/CMakeTmp/CheckSymbolExists.c:51: error: ‘idna_strerror’ undeclared (first use in this function)
+/home/lau/cmake-2.8.10.2/CMakeFiles/CMakeTmp/CheckSymbolExists.c:51: error: (Each undeclared identifier is reported only once
+/home/lau/cmake-2.8.10.2/CMakeFiles/CMakeTmp/CheckSymbolExists.c:51: error: for each function it appears in.)
+gmake[1]: Leaving directory `/home/lau/cmake-2.8.10.2/CMakeFiles/CMakeTmp'
+gmake[1]: *** [CMakeFiles/cmTryCompileExec4040251027.dir/CheckSymbolExists.c.o] Error 1
+gmake: *** [cmTryCompileExec4040251027/fast] Error 2
+
+File /home/lau/cmake-2.8.10.2/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <stdio.h>
+#include <stddef.h>
+#include <sys/types.h>
+#include <inttypes.h>
+#include <alloca.h>
+#include <arpa/inet.h>
+#include <dlfcn.h>
+#include <fcntl.h>
+#include <malloc.h>
+#include <memory.h>
+#include <netdb.h>
+#include <sys/poll.h>
+#include <assert.h>
+#include <limits.h>
+#include <sys/socket.h>
+#include <netinet/in.h>
+#include <net/if.h>
+#include <netinet/if_ether.h>
+#include <netinet/tcp.h>
+#include <sys/select.h>
+#include <utime.h>
+#include <netinet/in.h>
+#include <pwd.h>
+#include <sgtty.h>
+#include <stdint.h>
+#include <stdlib.h>
+#include <string.h>
+#include <strings.h>
+#include <sys/param.h>
+#include <sys/stat.h>
+#include <sys/time.h>
+#include <sys/resource.h>
+#include <termios.h>
+#include <termio.h>
+#include <time.h>
+#include <unistd.h>
+#include <locale.h>
+#include <setjmp.h>
+#include <signal.h>
+#include <sys/ioctl.h>
+#include <sys/utsname.h>
+#include <arpa/tftp.h>
+#include <errno.h>
+#include <libgen.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef idna_strerror
+  return ((int*)(&idna_strerror))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+
+Determining if the tld_strerror exist failed with the following output:
+Change Dir: /home/lau/cmake-2.8.10.2/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/gmake "cmTryCompileExec2654846251/fast"
+gmake -f CMakeFiles/cmTryCompileExec2654846251.dir/build.make CMakeFiles/cmTryCompileExec2654846251.dir/build
+gmake[1]: Entering directory `/home/lau/cmake-2.8.10.2/CMakeFiles/CMakeTmp'
+/home/lau/cmake-2.8.10.2/Bootstrap.cmk/cmake -E cmake_progress_report /home/lau/cmake-2.8.10.2/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec2654846251.dir/CheckSymbolExists.c.o
+/usr/bin/gcc    -o CMakeFiles/cmTryCompileExec2654846251.dir/CheckSymbolExists.c.o   -c /home/lau/cmake-2.8.10.2/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+/home/lau/cmake-2.8.10.2/CMakeFiles/CMakeTmp/CheckSymbolExists.c: In function ‘main’:
+/home/lau/cmake-2.8.10.2/CMakeFiles/CMakeTmp/CheckSymbolExists.c:51: error: ‘tld_strerror’ undeclared (first use in this function)
+/home/lau/cmake-2.8.10.2/CMakeFiles/CMakeTmp/CheckSymbolExists.c:51: error: (Each undeclared identifier is reported only once
+/home/lau/cmake-2.8.10.2/CMakeFiles/CMakeTmp/CheckSymbolExists.c:51: error: for each function it appears in.)
+gmake[1]: Leaving directory `/home/lau/cmake-2.8.10.2/CMakeFiles/CMakeTmp'
+gmake[1]: *** [CMakeFiles/cmTryCompileExec2654846251.dir/CheckSymbolExists.c.o] Error 1
+gmake: *** [cmTryCompileExec2654846251/fast] Error 2
+
+File /home/lau/cmake-2.8.10.2/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <stdio.h>
+#include <stddef.h>
+#include <sys/types.h>
+#include <inttypes.h>
+#include <alloca.h>
+#include <arpa/inet.h>
+#include <dlfcn.h>
+#include <fcntl.h>
+#include <malloc.h>
+#include <memory.h>
+#include <netdb.h>
+#include <sys/poll.h>
+#include <assert.h>
+#include <limits.h>
+#include <sys/socket.h>
+#include <netinet/in.h>
+#include <net/if.h>
+#include <netinet/if_ether.h>
+#include <netinet/tcp.h>
+#include <sys/select.h>
+#include <utime.h>
+#include <netinet/in.h>
+#include <pwd.h>
+#include <sgtty.h>
+#include <stdint.h>
+#include <stdlib.h>
+#include <string.h>
+#include <strings.h>
+#include <sys/param.h>
+#include <sys/stat.h>
+#include <sys/time.h>
+#include <sys/resource.h>
+#include <termios.h>
+#include <termio.h>
+#include <time.h>
+#include <unistd.h>
+#include <locale.h>
+#include <setjmp.h>
+#include <signal.h>
+#include <sys/ioctl.h>
+#include <sys/utsname.h>
+#include <arpa/tftp.h>
+#include <errno.h>
+#include <libgen.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef tld_strerror
+  return ((int*)(&tld_strerror))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+
+Performing Curl Test HAVE_FIONBIO failed with the following output:
+Change Dir: /home/lau/cmake-2.8.10.2/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/gmake "cmTryCompileExec2826978086/fast"
+gmake -f CMakeFiles/cmTryCompileExec2826978086.dir/build.make CMakeFiles/cmTryCompileExec2826978086.dir/build
+gmake[1]: Entering directory `/home/lau/cmake-2.8.10.2/CMakeFiles/CMakeTmp'
+/home/lau/cmake-2.8.10.2/Bootstrap.cmk/cmake -E cmake_progress_report /home/lau/cmake-2.8.10.2/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec2826978086.dir/CurlTests.c.o
+/usr/bin/gcc   -DHAVE_FIONBIO   -o CMakeFiles/cmTryCompileExec2826978086.dir/CurlTests.c.o   -c /home/lau/cmake-2.8.10.2/Utilities/cmcurl/CMake/CurlTests.c
+/home/lau/cmake-2.8.10.2/Utilities/cmcurl/CMake/CurlTests.c:468:21: error: stropts.h: No such file or directory
+/home/lau/cmake-2.8.10.2/Utilities/cmcurl/CMake/CurlTests.c: In function ‘main’:
+/home/lau/cmake-2.8.10.2/Utilities/cmcurl/CMake/CurlTests.c:476: error: ‘FIONBIO’ undeclared (first use in this function)
+/home/lau/cmake-2.8.10.2/Utilities/cmcurl/CMake/CurlTests.c:476: error: (Each undeclared identifier is reported only once
+/home/lau/cmake-2.8.10.2/Utilities/cmcurl/CMake/CurlTests.c:476: error: for each function it appears in.)
+gmake[1]: Leaving directory `/home/lau/cmake-2.8.10.2/CMakeFiles/CMakeTmp'
+gmake[1]: *** [CMakeFiles/cmTryCompileExec2826978086.dir/CurlTests.c.o] Error 1
+gmake: *** [cmTryCompileExec2826978086/fast] Error 2
+
+Performing Curl Test HAVE_IOCTLSOCKET failed with the following output:
+Change Dir: /home/lau/cmake-2.8.10.2/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/gmake "cmTryCompileExec2112382045/fast"
+gmake -f CMakeFiles/cmTryCompileExec2112382045.dir/build.make CMakeFiles/cmTryCompileExec2112382045.dir/build
+gmake[1]: Entering directory `/home/lau/cmake-2.8.10.2/CMakeFiles/CMakeTmp'
+/home/lau/cmake-2.8.10.2/Bootstrap.cmk/cmake -E cmake_progress_report /home/lau/cmake-2.8.10.2/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec2112382045.dir/CurlTests.c.o
+/usr/bin/gcc   -DHAVE_IOCTLSOCKET   -o CMakeFiles/cmTryCompileExec2112382045.dir/CurlTests.c.o   -c /home/lau/cmake-2.8.10.2/Utilities/cmcurl/CMake/CurlTests.c
+/home/lau/cmake-2.8.10.2/Utilities/cmcurl/CMake/CurlTests.c:435:21: error: windows.h: No such file or directory
+/home/lau/cmake-2.8.10.2/Utilities/cmcurl/CMake/CurlTests.c: In function ‘main’:
+/home/lau/cmake-2.8.10.2/Utilities/cmcurl/CMake/CurlTests.c:443: error: ‘FIONBIO’ undeclared (first use in this function)
+/home/lau/cmake-2.8.10.2/Utilities/cmcurl/CMake/CurlTests.c:443: error: (Each undeclared identifier is reported only once
+/home/lau/cmake-2.8.10.2/Utilities/cmcurl/CMake/CurlTests.c:443: error: for each function it appears in.)
+gmake[1]: Leaving directory `/home/lau/cmake-2.8.10.2/CMakeFiles/CMakeTmp'
+gmake[1]: *** [CMakeFiles/cmTryCompileExec2112382045.dir/CurlTests.c.o] Error 1
+gmake: *** [cmTryCompileExec2112382045/fast] Error 2
+
+Performing Curl Test HAVE_IOCTLSOCKET_CASE failed with the following output:
+Change Dir: /home/lau/cmake-2.8.10.2/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/gmake "cmTryCompileExec910682966/fast"
+gmake -f CMakeFiles/cmTryCompileExec910682966.dir/build.make CMakeFiles/cmTryCompileExec910682966.dir/build
+gmake[1]: Entering directory `/home/lau/cmake-2.8.10.2/CMakeFiles/CMakeTmp'
+/home/lau/cmake-2.8.10.2/Bootstrap.cmk/cmake -E cmake_progress_report /home/lau/cmake-2.8.10.2/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec910682966.dir/CurlTests.c.o
+/usr/bin/gcc   -DHAVE_IOCTLSOCKET_CASE   -o CMakeFiles/cmTryCompileExec910682966.dir/CurlTests.c.o   -c /home/lau/cmake-2.8.10.2/Utilities/cmcurl/CMake/CurlTests.c
+/home/lau/cmake-2.8.10.2/Utilities/cmcurl/CMake/CurlTests.c:451:21: error: windows.h: No such file or directory
+/home/lau/cmake-2.8.10.2/Utilities/cmcurl/CMake/CurlTests.c: In function ‘main’:
+/home/lau/cmake-2.8.10.2/Utilities/cmcurl/CMake/CurlTests.c:459: error: ‘FIONBIO’ undeclared (first use in this function)
+/home/lau/cmake-2.8.10.2/Utilities/cmcurl/CMake/CurlTests.c:459: error: (Each undeclared identifier is reported only once
+/home/lau/cmake-2.8.10.2/Utilities/cmcurl/CMake/CurlTests.c:459: error: for each function it appears in.)
+gmake[1]: Leaving directory `/home/lau/cmake-2.8.10.2/CMakeFiles/CMakeTmp'
+gmake[1]: *** [CMakeFiles/cmTryCompileExec910682966.dir/CurlTests.c.o] Error 1
+gmake: *** [cmTryCompileExec910682966/fast] Error 2
+
+Performing Curl Test HAVE_SO_NONBLOCK failed with the following output:
+Change Dir: /home/lau/cmake-2.8.10.2/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/gmake "cmTryCompileExec3610325939/fast"
+gmake -f CMakeFiles/cmTryCompileExec3610325939.dir/build.make CMakeFiles/cmTryCompileExec3610325939.dir/build
+gmake[1]: Entering directory `/home/lau/cmake-2.8.10.2/CMakeFiles/CMakeTmp'
+/home/lau/cmake-2.8.10.2/Bootstrap.cmk/cmake -E cmake_progress_report /home/lau/cmake-2.8.10.2/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec3610325939.dir/CurlTests.c.o
+/usr/bin/gcc   -DHAVE_SO_NONBLOCK   -o CMakeFiles/cmTryCompileExec3610325939.dir/CurlTests.c.o   -c /home/lau/cmake-2.8.10.2/Utilities/cmcurl/CMake/CurlTests.c
+/home/lau/cmake-2.8.10.2/Utilities/cmcurl/CMake/CurlTests.c: In function ‘main’:
+/home/lau/cmake-2.8.10.2/Utilities/cmcurl/CMake/CurlTests.c:494: error: ‘SOL_SOCKET’ undeclared (first use in this function)
+/home/lau/cmake-2.8.10.2/Utilities/cmcurl/CMake/CurlTests.c:494: error: (Each undeclared identifier is reported only once
+/home/lau/cmake-2.8.10.2/Utilities/cmcurl/CMake/CurlTests.c:494: error: for each function it appears in.)
+/home/lau/cmake-2.8.10.2/Utilities/cmcurl/CMake/CurlTests.c:494: error: ‘SO_NONBLOCK’ undeclared (first use in this function)
+gmake[1]: Leaving directory `/home/lau/cmake-2.8.10.2/CMakeFiles/CMakeTmp'
+gmake[1]: *** [CMakeFiles/cmTryCompileExec3610325939.dir/CurlTests.c.o] Error 1
+gmake: *** [cmTryCompileExec3610325939/fast] Error 2
+
+Performing Curl Test HAVE_O_NONBLOCKHAVE_GETHOSTBYADDR_R_5 failed with the following output:
+Change Dir: /home/lau/cmake-2.8.10.2/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/gmake "cmTryCompileExec2686374771/fast"
+gmake -f CMakeFiles/cmTryCompileExec2686374771.dir/build.make CMakeFiles/cmTryCompileExec2686374771.dir/build
+gmake[1]: Entering directory `/home/lau/cmake-2.8.10.2/CMakeFiles/CMakeTmp'
+/home/lau/cmake-2.8.10.2/Bootstrap.cmk/cmake -E cmake_progress_report /home/lau/cmake-2.8.10.2/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec2686374771.dir/CurlTests.c.o
+/usr/bin/gcc   -DHAVE_O_NONBLOCKHAVE_GETHOSTBYADDR_R_5   -o CMakeFiles/cmTryCompileExec2686374771.dir/CurlTests.c.o   -c /home/lau/cmake-2.8.10.2/Utilities/cmcurl/CMake/CurlTests.c
+Linking C executable cmTryCompileExec2686374771
+/home/lau/cmake-2.8.10.2/Bootstrap.cmk/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec2686374771.dir/link.txt --verbose=1
+/usr/bin/gcc      -DHAVE_O_NONBLOCKHAVE_GETHOSTBYADDR_R_5    CMakeFiles/cmTryCompileExec2686374771.dir/CurlTests.c.o  -o cmTryCompileExec2686374771 -rdynamic -ldl 
+/usr/lib/gcc/i686-redhat-linux/4.4.7/../../../crt1.o: In function `_start':
+(.text+0x18): undefined reference to `main'
+collect2: ld returned 1 exit status
+gmake[1]: Leaving directory `/home/lau/cmake-2.8.10.2/CMakeFiles/CMakeTmp'
+gmake[1]: *** [cmTryCompileExec2686374771] Error 1
+gmake: *** [cmTryCompileExec2686374771/fast] Error 2
+
+Performing Curl Test HAVE_GETHOSTBYADDR_R_7 failed with the following output:
+Change Dir: /home/lau/cmake-2.8.10.2/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/gmake "cmTryCompileExec623077872/fast"
+gmake -f CMakeFiles/cmTryCompileExec623077872.dir/build.make CMakeFiles/cmTryCompileExec623077872.dir/build
+gmake[1]: Entering directory `/home/lau/cmake-2.8.10.2/CMakeFiles/CMakeTmp'
+/home/lau/cmake-2.8.10.2/Bootstrap.cmk/cmake -E cmake_progress_report /home/lau/cmake-2.8.10.2/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec623077872.dir/CurlTests.c.o
+/usr/bin/gcc   -DHAVE_GETHOSTBYADDR_R_7   -o CMakeFiles/cmTryCompileExec623077872.dir/CurlTests.c.o   -c /home/lau/cmake-2.8.10.2/Utilities/cmcurl/CMake/CurlTests.c
+/home/lau/cmake-2.8.10.2/Utilities/cmcurl/CMake/CurlTests.c: In function ‘main’:
+/home/lau/cmake-2.8.10.2/Utilities/cmcurl/CMake/CurlTests.c:112: warning: passing argument 7 of ‘gethostbyaddr_r’ from incompatible pointer type
+/usr/include/netdb.h:173: note: expected ‘struct hostent ** __restrict__’ but argument is of type ‘int *’
+/home/lau/cmake-2.8.10.2/Utilities/cmcurl/CMake/CurlTests.c:112: error: too few arguments to function ‘gethostbyaddr_r’
+gmake[1]: Leaving directory `/home/lau/cmake-2.8.10.2/CMakeFiles/CMakeTmp'
+gmake[1]: *** [CMakeFiles/cmTryCompileExec623077872.dir/CurlTests.c.o] Error 1
+gmake: *** [cmTryCompileExec623077872/fast] Error 2
+
+Performing Curl Test HAVE_GETHOSTBYADDR_R_5_REENTRANT failed with the following output:
+Change Dir: /home/lau/cmake-2.8.10.2/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/gmake "cmTryCompileExec535763263/fast"
+gmake -f CMakeFiles/cmTryCompileExec535763263.dir/build.make CMakeFiles/cmTryCompileExec535763263.dir/build
+gmake[1]: Entering directory `/home/lau/cmake-2.8.10.2/CMakeFiles/CMakeTmp'
+/home/lau/cmake-2.8.10.2/Bootstrap.cmk/cmake -E cmake_progress_report /home/lau/cmake-2.8.10.2/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec535763263.dir/CurlTests.c.o
+/usr/bin/gcc   -DHAVE_GETHOSTBYADDR_R_5_REENTRANT   -o CMakeFiles/cmTryCompileExec535763263.dir/CurlTests.c.o   -c /home/lau/cmake-2.8.10.2/Utilities/cmcurl/CMake/CurlTests.c
+/home/lau/cmake-2.8.10.2/Utilities/cmcurl/CMake/CurlTests.c: In function ‘main’:
+/home/lau/cmake-2.8.10.2/Utilities/cmcurl/CMake/CurlTests.c:80: error: ‘q’ undeclared (first use in this function)
+/home/lau/cmake-2.8.10.2/Utilities/cmcurl/CMake/CurlTests.c:80: error: (Each undeclared identifier is reported only once
+/home/lau/cmake-2.8.10.2/Utilities/cmcurl/CMake/CurlTests.c:80: error: for each function it appears in.)
+/home/lau/cmake-2.8.10.2/Utilities/cmcurl/CMake/CurlTests.c:81: error: expected ‘;’ before ‘int’
+/home/lau/cmake-2.8.10.2/Utilities/cmcurl/CMake/CurlTests.c:83: error: storage size of ‘hdata’ isn’t known
+/home/lau/cmake-2.8.10.2/Utilities/cmcurl/CMake/CurlTests.c:88: error: ‘type’ undeclared (first use in this function)
+/home/lau/cmake-2.8.10.2/Utilities/cmcurl/CMake/CurlTests.c:88: error: too few arguments to function ‘gethostbyaddr_r’
+gmake[1]: Leaving directory `/home/lau/cmake-2.8.10.2/CMakeFiles/CMakeTmp'
+gmake[1]: *** [CMakeFiles/cmTryCompileExec535763263.dir/CurlTests.c.o] Error 1
+gmake: *** [cmTryCompileExec535763263/fast] Error 2
+
+Performing Curl Test HAVE_GETHOSTBYADDR_R_7_REENTRANT failed with the following output:
+Change Dir: /home/lau/cmake-2.8.10.2/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/gmake "cmTryCompileExec1677049559/fast"
+gmake -f CMakeFiles/cmTryCompileExec1677049559.dir/build.make CMakeFiles/cmTryCompileExec1677049559.dir/build
+gmake[1]: Entering directory `/home/lau/cmake-2.8.10.2/CMakeFiles/CMakeTmp'
+/home/lau/cmake-2.8.10.2/Bootstrap.cmk/cmake -E cmake_progress_report /home/lau/cmake-2.8.10.2/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec1677049559.dir/CurlTests.c.o
+/usr/bin/gcc   -DHAVE_GETHOSTBYADDR_R_7_REENTRANT   -o CMakeFiles/cmTryCompileExec1677049559.dir/CurlTests.c.o   -c /home/lau/cmake-2.8.10.2/Utilities/cmcurl/CMake/CurlTests.c
+/home/lau/cmake-2.8.10.2/Utilities/cmcurl/CMake/CurlTests.c: In function ‘main’:
+/home/lau/cmake-2.8.10.2/Utilities/cmcurl/CMake/CurlTests.c:137: warning: passing argument 7 of ‘gethostbyaddr_r’ from incompatible pointer type
+/usr/include/netdb.h:173: note: expected ‘struct hostent ** __restrict__’ but argument is of type ‘int *’
+/home/lau/cmake-2.8.10.2/Utilities/cmcurl/CMake/CurlTests.c:137: error: too few arguments to function ‘gethostbyaddr_r’
+gmake[1]: Leaving directory `/home/lau/cmake-2.8.10.2/CMakeFiles/CMakeTmp'
+gmake[1]: *** [CMakeFiles/cmTryCompileExec1677049559.dir/CurlTests.c.o] Error 1
+gmake: *** [cmTryCompileExec1677049559/fast] Error 2
+
+Performing Curl Test HAVE_GETHOSTBYNAME_R_3 failed with the following output:
+Change Dir: /home/lau/cmake-2.8.10.2/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/gmake "cmTryCompileExec3678300016/fast"
+gmake -f CMakeFiles/cmTryCompileExec3678300016.dir/build.make CMakeFiles/cmTryCompileExec3678300016.dir/build
+gmake[1]: Entering directory `/home/lau/cmake-2.8.10.2/CMakeFiles/CMakeTmp'
+/home/lau/cmake-2.8.10.2/Bootstrap.cmk/cmake -E cmake_progress_report /home/lau/cmake-2.8.10.2/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec3678300016.dir/CurlTests.c.o
+/usr/bin/gcc   -DHAVE_GETHOSTBYNAME_R_3   -o CMakeFiles/cmTryCompileExec3678300016.dir/CurlTests.c.o   -c /home/lau/cmake-2.8.10.2/Utilities/cmcurl/CMake/CurlTests.c
+/home/lau/cmake-2.8.10.2/Utilities/cmcurl/CMake/CurlTests.c: In function ‘main’:
+/home/lau/cmake-2.8.10.2/Utilities/cmcurl/CMake/CurlTests.c:204: error: storage size of ‘data’ isn’t known
+/home/lau/cmake-2.8.10.2/Utilities/cmcurl/CMake/CurlTests.c:208: error: too few arguments to function ‘gethostbyname_r’
+gmake[1]: Leaving directory `/home/lau/cmake-2.8.10.2/CMakeFiles/CMakeTmp'
+gmake[1]: *** [CMakeFiles/cmTryCompileExec3678300016.dir/CurlTests.c.o] Error 1
+gmake: *** [cmTryCompileExec3678300016/fast] Error 2
+
+Performing Curl Test HAVE_GETHOSTBYNAME_R_5 failed with the following output:
+Change Dir: /home/lau/cmake-2.8.10.2/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/gmake "cmTryCompileExec1062885499/fast"
+gmake -f CMakeFiles/cmTryCompileExec1062885499.dir/build.make CMakeFiles/cmTryCompileExec1062885499.dir/build
+gmake[1]: Entering directory `/home/lau/cmake-2.8.10.2/CMakeFiles/CMakeTmp'
+/home/lau/cmake-2.8.10.2/Bootstrap.cmk/cmake -E cmake_progress_report /home/lau/cmake-2.8.10.2/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec1062885499.dir/CurlTests.c.o
+/usr/bin/gcc   -DHAVE_GETHOSTBYNAME_R_5   -o CMakeFiles/cmTryCompileExec1062885499.dir/CurlTests.c.o   -c /home/lau/cmake-2.8.10.2/Utilities/cmcurl/CMake/CurlTests.c
+/home/lau/cmake-2.8.10.2/Utilities/cmcurl/CMake/CurlTests.c: In function ‘main’:
+/home/lau/cmake-2.8.10.2/Utilities/cmcurl/CMake/CurlTests.c:247: error: too few arguments to function ‘gethostbyname_r’
+gmake[1]: Leaving directory `/home/lau/cmake-2.8.10.2/CMakeFiles/CMakeTmp'
+gmake[1]: *** [CMakeFiles/cmTryCompileExec1062885499.dir/CurlTests.c.o] Error 1
+gmake: *** [cmTryCompileExec1062885499/fast] Error 2
+
+Performing Curl Test HAVE_GETHOSTBYNAME_R_3_REENTRANT failed with the following output:
+Change Dir: /home/lau/cmake-2.8.10.2/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/gmake "cmTryCompileExec501958751/fast"
+gmake -f CMakeFiles/cmTryCompileExec501958751.dir/build.make CMakeFiles/cmTryCompileExec501958751.dir/build
+gmake[1]: Entering directory `/home/lau/cmake-2.8.10.2/CMakeFiles/CMakeTmp'
+/home/lau/cmake-2.8.10.2/Bootstrap.cmk/cmake -E cmake_progress_report /home/lau/cmake-2.8.10.2/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec501958751.dir/CurlTests.c.o
+/usr/bin/gcc   -DHAVE_GETHOSTBYNAME_R_3_REENTRANT   -o CMakeFiles/cmTryCompileExec501958751.dir/CurlTests.c.o   -c /home/lau/cmake-2.8.10.2/Utilities/cmcurl/CMake/CurlTests.c
+/home/lau/cmake-2.8.10.2/Utilities/cmcurl/CMake/CurlTests.c: In function ‘main’:
+/home/lau/cmake-2.8.10.2/Utilities/cmcurl/CMake/CurlTests.c:225: error: storage size of ‘data’ isn’t known
+/home/lau/cmake-2.8.10.2/Utilities/cmcurl/CMake/CurlTests.c:229: error: too few arguments to function ‘gethostbyname_r’
+gmake[1]: Leaving directory `/home/lau/cmake-2.8.10.2/CMakeFiles/CMakeTmp'
+gmake[1]: *** [CMakeFiles/cmTryCompileExec501958751.dir/CurlTests.c.o] Error 1
+gmake: *** [cmTryCompileExec501958751/fast] Error 2
+
+Performing Curl Test HAVE_GETHOSTBYNAME_R_5_REENTRANT failed with the following output:
+Change Dir: /home/lau/cmake-2.8.10.2/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/gmake "cmTryCompileExec3717537973/fast"
+gmake -f CMakeFiles/cmTryCompileExec3717537973.dir/build.make CMakeFiles/cmTryCompileExec3717537973.dir/build
+gmake[1]: Entering directory `/home/lau/cmake-2.8.10.2/CMakeFiles/CMakeTmp'
+/home/lau/cmake-2.8.10.2/Bootstrap.cmk/cmake -E cmake_progress_report /home/lau/cmake-2.8.10.2/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec3717537973.dir/CurlTests.c.o
+/usr/bin/gcc   -DHAVE_GETHOSTBYNAME_R_5_REENTRANT   -o CMakeFiles/cmTryCompileExec3717537973.dir/CurlTests.c.o   -c /home/lau/cmake-2.8.10.2/Utilities/cmcurl/CMake/CurlTests.c
+/home/lau/cmake-2.8.10.2/Utilities/cmcurl/CMake/CurlTests.c: In function ‘main’:
+/home/lau/cmake-2.8.10.2/Utilities/cmcurl/CMake/CurlTests.c:266: error: too few arguments to function ‘gethostbyname_r’
+gmake[1]: Leaving directory `/home/lau/cmake-2.8.10.2/CMakeFiles/CMakeTmp'
+gmake[1]: *** [CMakeFiles/cmTryCompileExec3717537973.dir/CurlTests.c.o] Error 1
+gmake: *** [cmTryCompileExec3717537973/fast] Error 2
+
+Performing Curl Test HAVE_INET_NTOA_R_DECL failed with the following output:
+Change Dir: /home/lau/cmake-2.8.10.2/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/gmake "cmTryCompileExec1015824471/fast"
+gmake -f CMakeFiles/cmTryCompileExec1015824471.dir/build.make CMakeFiles/cmTryCompileExec1015824471.dir/build
+gmake[1]: Entering directory `/home/lau/cmake-2.8.10.2/CMakeFiles/CMakeTmp'
+/home/lau/cmake-2.8.10.2/Bootstrap.cmk/cmake -E cmake_progress_report /home/lau/cmake-2.8.10.2/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec1015824471.dir/CurlTests.c.o
+/usr/bin/gcc   -DHAVE_INET_NTOA_R_DECL   -o CMakeFiles/cmTryCompileExec1015824471.dir/CurlTests.c.o   -c /home/lau/cmake-2.8.10.2/Utilities/cmcurl/CMake/CurlTests.c
+/home/lau/cmake-2.8.10.2/Utilities/cmcurl/CMake/CurlTests.c: In function ‘main’:
+/home/lau/cmake-2.8.10.2/Utilities/cmcurl/CMake/CurlTests.c:376: error: ‘inet_ntoa_r’ undeclared (first use in this function)
+/home/lau/cmake-2.8.10.2/Utilities/cmcurl/CMake/CurlTests.c:376: error: (Each undeclared identifier is reported only once
+/home/lau/cmake-2.8.10.2/Utilities/cmcurl/CMake/CurlTests.c:376: error: for each function it appears in.)
+gmake[1]: Leaving directory `/home/lau/cmake-2.8.10.2/CMakeFiles/CMakeTmp'
+gmake[1]: *** [CMakeFiles/cmTryCompileExec1015824471.dir/CurlTests.c.o] Error 1
+gmake: *** [cmTryCompileExec1015824471/fast] Error 2
+
+Performing Curl Test HAVE_INET_NTOA_R_DECL_REENTRANT failed with the following output:
+Change Dir: /home/lau/cmake-2.8.10.2/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/gmake "cmTryCompileExec2234545354/fast"
+gmake -f CMakeFiles/cmTryCompileExec2234545354.dir/build.make CMakeFiles/cmTryCompileExec2234545354.dir/build
+gmake[1]: Entering directory `/home/lau/cmake-2.8.10.2/CMakeFiles/CMakeTmp'
+/home/lau/cmake-2.8.10.2/Bootstrap.cmk/cmake -E cmake_progress_report /home/lau/cmake-2.8.10.2/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec2234545354.dir/CurlTests.c.o
+/usr/bin/gcc   -DHAVE_INET_NTOA_R_DECL_REENTRANT   -o CMakeFiles/cmTryCompileExec2234545354.dir/CurlTests.c.o   -c /home/lau/cmake-2.8.10.2/Utilities/cmcurl/CMake/CurlTests.c
+/home/lau/cmake-2.8.10.2/Utilities/cmcurl/CMake/CurlTests.c: In function ‘main’:
+/home/lau/cmake-2.8.10.2/Utilities/cmcurl/CMake/CurlTests.c:391: error: ‘inet_ntoa_r’ undeclared (first use in this function)
+/home/lau/cmake-2.8.10.2/Utilities/cmcurl/CMake/CurlTests.c:391: error: (Each undeclared identifier is reported only once
+/home/lau/cmake-2.8.10.2/Utilities/cmcurl/CMake/CurlTests.c:391: error: for each function it appears in.)
+gmake[1]: Leaving directory `/home/lau/cmake-2.8.10.2/CMakeFiles/CMakeTmp'
+gmake[1]: *** [CMakeFiles/cmTryCompileExec2234545354.dir/CurlTests.c.o] Error 1
+gmake: *** [cmTryCompileExec2234545354/fast] Error 2
+
+Determining if the function BZ2_bzCompressInit exists in the cmbzip2 failed with the following output:
+Change Dir: /home/lau/cmake-2.8.10.2/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/gmake "cmTryCompileExec1924547678/fast"
+gmake -f CMakeFiles/cmTryCompileExec1924547678.dir/build.make CMakeFiles/cmTryCompileExec1924547678.dir/build
+gmake[1]: Entering directory `/home/lau/cmake-2.8.10.2/CMakeFiles/CMakeTmp'
+/home/lau/cmake-2.8.10.2/Bootstrap.cmk/cmake -E cmake_progress_report /home/lau/cmake-2.8.10.2/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec1924547678.dir/CheckFunctionExists.c.o
+/usr/bin/gcc   -w  -DCHECK_FUNCTION_EXISTS=BZ2_bzCompressInit   -o CMakeFiles/cmTryCompileExec1924547678.dir/CheckFunctionExists.c.o   -c /home/lau/cmake-2.8.10.2/Modules/CheckFunctionExists.c
+Linking C executable cmTryCompileExec1924547678
+/home/lau/cmake-2.8.10.2/Bootstrap.cmk/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec1924547678.dir/link.txt --verbose=1
+/usr/bin/gcc    -w  -DCHECK_FUNCTION_EXISTS=BZ2_bzCompressInit    CMakeFiles/cmTryCompileExec1924547678.dir/CheckFunctionExists.c.o  -o cmTryCompileExec1924547678 -rdynamic -lcmbzip2 
+/usr/bin/ld: cannot find -lcmbzip2
+collect2: ld returned 1 exit status
+gmake[1]: Leaving directory `/home/lau/cmake-2.8.10.2/CMakeFiles/CMakeTmp'
+gmake[1]: *** [cmTryCompileExec1924547678] Error 1
+gmake: *** [cmTryCompileExec1924547678/fast] Error 2
+
+
+Determining if files sys/types.h;acl/libacl.h exist failed with the following output:
+Change Dir: /home/lau/cmake-2.8.10.2/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/gmake "cmTryCompileExec2709020202/fast"
+gmake -f CMakeFiles/cmTryCompileExec2709020202.dir/build.make CMakeFiles/cmTryCompileExec2709020202.dir/build
+gmake[1]: Entering directory `/home/lau/cmake-2.8.10.2/CMakeFiles/CMakeTmp'
+/home/lau/cmake-2.8.10.2/Bootstrap.cmk/cmake -E cmake_progress_report /home/lau/cmake-2.8.10.2/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec2709020202.dir/CheckIncludeFiles.c.o
+/usr/bin/gcc   -w     -o CMakeFiles/cmTryCompileExec2709020202.dir/CheckIncludeFiles.c.o   -c /home/lau/cmake-2.8.10.2/CMakeFiles/CMakeTmp/CheckIncludeFiles.c
+/home/lau/cmake-2.8.10.2/CMakeFiles/CMakeTmp/CheckIncludeFiles.c:3:24: error: acl/libacl.h: No such file or directory
+gmake[1]: Leaving directory `/home/lau/cmake-2.8.10.2/CMakeFiles/CMakeTmp'
+gmake[1]: *** [CMakeFiles/cmTryCompileExec2709020202.dir/CheckIncludeFiles.c.o] Error 1
+gmake: *** [cmTryCompileExec2709020202/fast] Error 2
+
+Source:
+/* */
+#include <sys/types.h>
+#include <acl/libacl.h>
+
+
+int main(){return 0;}
+
+Determining if files sys/types.h;ctype.h;copyfile.h exist failed with the following output:
+Change Dir: /home/lau/cmake-2.8.10.2/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/gmake "cmTryCompileExec4223726860/fast"
+gmake -f CMakeFiles/cmTryCompileExec4223726860.dir/build.make CMakeFiles/cmTryCompileExec4223726860.dir/build
+gmake[1]: Entering directory `/home/lau/cmake-2.8.10.2/CMakeFiles/CMakeTmp'
+/home/lau/cmake-2.8.10.2/Bootstrap.cmk/cmake -E cmake_progress_report /home/lau/cmake-2.8.10.2/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec4223726860.dir/CheckIncludeFiles.c.o
+/usr/bin/gcc   -w     -o CMakeFiles/cmTryCompileExec4223726860.dir/CheckIncludeFiles.c.o   -c /home/lau/cmake-2.8.10.2/CMakeFiles/CMakeTmp/CheckIncludeFiles.c
+/home/lau/cmake-2.8.10.2/CMakeFiles/CMakeTmp/CheckIncludeFiles.c:4:22: error: copyfile.h: No such file or directory
+gmake[1]: Leaving directory `/home/lau/cmake-2.8.10.2/CMakeFiles/CMakeTmp'
+gmake[1]: *** [CMakeFiles/cmTryCompileExec4223726860.dir/CheckIncludeFiles.c.o] Error 1
+gmake: *** [cmTryCompileExec4223726860/fast] Error 2
+
+Source:
+/* */
+#include <sys/types.h>
+#include <ctype.h>
+#include <copyfile.h>
+
+
+int main(){return 0;}
+
+Determining if files sys/types.h;ctype.h;direct.h exist failed with the following output:
+Change Dir: /home/lau/cmake-2.8.10.2/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/gmake "cmTryCompileExec3390003256/fast"
+gmake -f CMakeFiles/cmTryCompileExec3390003256.dir/build.make CMakeFiles/cmTryCompileExec3390003256.dir/build
+gmake[1]: Entering directory `/home/lau/cmake-2.8.10.2/CMakeFiles/CMakeTmp'
+/home/lau/cmake-2.8.10.2/Bootstrap.cmk/cmake -E cmake_progress_report /home/lau/cmake-2.8.10.2/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec3390003256.dir/CheckIncludeFiles.c.o
+/usr/bin/gcc   -w     -o CMakeFiles/cmTryCompileExec3390003256.dir/CheckIncludeFiles.c.o   -c /home/lau/cmake-2.8.10.2/CMakeFiles/CMakeTmp/CheckIncludeFiles.c
+/home/lau/cmake-2.8.10.2/CMakeFiles/CMakeTmp/CheckIncludeFiles.c:4:20: error: direct.h: No such file or directory
+gmake[1]: Leaving directory `/home/lau/cmake-2.8.10.2/CMakeFiles/CMakeTmp'
+gmake[1]: *** [CMakeFiles/cmTryCompileExec3390003256.dir/CheckIncludeFiles.c.o] Error 1
+gmake: *** [cmTryCompileExec3390003256/fast] Error 2
+
+Source:
+/* */
+#include <sys/types.h>
+#include <ctype.h>
+#include <direct.h>
+
+
+int main(){return 0;}
+
+Determining if files sys/types.h;ctype.h;dlfcn.h;errno.h;ext2fs/ext2_fs.h exist failed with the following output:
+Change Dir: /home/lau/cmake-2.8.10.2/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/gmake "cmTryCompileExec1605335828/fast"
+gmake -f CMakeFiles/cmTryCompileExec1605335828.dir/build.make CMakeFiles/cmTryCompileExec1605335828.dir/build
+gmake[1]: Entering directory `/home/lau/cmake-2.8.10.2/CMakeFiles/CMakeTmp'
+/home/lau/cmake-2.8.10.2/Bootstrap.cmk/cmake -E cmake_progress_report /home/lau/cmake-2.8.10.2/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec1605335828.dir/CheckIncludeFiles.c.o
+/usr/bin/gcc   -w     -o CMakeFiles/cmTryCompileExec1605335828.dir/CheckIncludeFiles.c.o   -c /home/lau/cmake-2.8.10.2/CMakeFiles/CMakeTmp/CheckIncludeFiles.c
+/home/lau/cmake-2.8.10.2/CMakeFiles/CMakeTmp/CheckIncludeFiles.c:6:28: error: ext2fs/ext2_fs.h: No such file or directory
+gmake[1]: Leaving directory `/home/lau/cmake-2.8.10.2/CMakeFiles/CMakeTmp'
+gmake[1]: *** [CMakeFiles/cmTryCompileExec1605335828.dir/CheckIncludeFiles.c.o] Error 1
+gmake: *** [cmTryCompileExec1605335828/fast] Error 2
+
+Source:
+/* */
+#include <sys/types.h>
+#include <ctype.h>
+#include <dlfcn.h>
+#include <errno.h>
+#include <ext2fs/ext2_fs.h>
+
+
+int main(){return 0;}
+
+Performing C SOURCE FILE Test HAVE_WORKING_EXT2_IOC_GETFLAGS failed with the following output:
+Change Dir: /home/lau/cmake-2.8.10.2/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/gmake "cmTryCompileExec1231408464/fast"
+gmake -f CMakeFiles/cmTryCompileExec1231408464.dir/build.make CMakeFiles/cmTryCompileExec1231408464.dir/build
+gmake[1]: Entering directory `/home/lau/cmake-2.8.10.2/CMakeFiles/CMakeTmp'
+/home/lau/cmake-2.8.10.2/Bootstrap.cmk/cmake -E cmake_progress_report /home/lau/cmake-2.8.10.2/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec1231408464.dir/src.c.o
+/usr/bin/gcc   -w  -DHAVE_WORKING_EXT2_IOC_GETFLAGS   -o CMakeFiles/cmTryCompileExec1231408464.dir/src.c.o   -c /home/lau/cmake-2.8.10.2/CMakeFiles/CMakeTmp/src.c
+/home/lau/cmake-2.8.10.2/CMakeFiles/CMakeTmp/src.c:2:28: error: ext2fs/ext2_fs.h: No such file or directory
+/home/lau/cmake-2.8.10.2/CMakeFiles/CMakeTmp/src.c: In function ‘main’:
+/home/lau/cmake-2.8.10.2/CMakeFiles/CMakeTmp/src.c:3: error: ‘EXT2_IOC_GETFLAGS’ undeclared (first use in this function)
+/home/lau/cmake-2.8.10.2/CMakeFiles/CMakeTmp/src.c:3: error: (Each undeclared identifier is reported only once
+/home/lau/cmake-2.8.10.2/CMakeFiles/CMakeTmp/src.c:3: error: for each function it appears in.)
+gmake[1]: Leaving directory `/home/lau/cmake-2.8.10.2/CMakeFiles/CMakeTmp'
+gmake[1]: *** [CMakeFiles/cmTryCompileExec1231408464.dir/src.c.o] Error 1
+gmake: *** [cmTryCompileExec1231408464/fast] Error 2
+
+Source file was:
+#include <sys/ioctl.h>
+#include <ext2fs/ext2_fs.h>
+int main(void) { return EXT2_IOC_GETFLAGS; }
+Determining if files sys/types.h;ctype.h;dlfcn.h;errno.h;fcntl.h;grp.h;inttypes.h;langinfo.h;limits.h;linux/types.h;linux/fiemap.h;linux/fs.h;linux/magic.h;locale.h;memory.h;paths.h;poll.h;pwd.h;regex.h;signal.h;stdarg.h;stdint.h;stdlib.h;string.h;strings.h;sys/acl.h exist failed with the following output:
+Change Dir: /home/lau/cmake-2.8.10.2/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/gmake "cmTryCompileExec3982729966/fast"
+gmake -f CMakeFiles/cmTryCompileExec3982729966.dir/build.make CMakeFiles/cmTryCompileExec3982729966.dir/build
+gmake[1]: Entering directory `/home/lau/cmake-2.8.10.2/CMakeFiles/CMakeTmp'
+/home/lau/cmake-2.8.10.2/Bootstrap.cmk/cmake -E cmake_progress_report /home/lau/cmake-2.8.10.2/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec3982729966.dir/CheckIncludeFiles.c.o
+/usr/bin/gcc   -w     -o CMakeFiles/cmTryCompileExec3982729966.dir/CheckIncludeFiles.c.o   -c /home/lau/cmake-2.8.10.2/CMakeFiles/CMakeTmp/CheckIncludeFiles.c
+/home/lau/cmake-2.8.10.2/CMakeFiles/CMakeTmp/CheckIncludeFiles.c:27:21: error: sys/acl.h: No such file or directory
+gmake[1]: Leaving directory `/home/lau/cmake-2.8.10.2/CMakeFiles/CMakeTmp'
+gmake[1]: *** [CMakeFiles/cmTryCompileExec3982729966.dir/CheckIncludeFiles.c.o] Error 1
+gmake: *** [cmTryCompileExec3982729966/fast] Error 2
+
+Source:
+/* */
+#include <sys/types.h>
+#include <ctype.h>
+#include <dlfcn.h>
+#include <errno.h>
+#include <fcntl.h>
+#include <grp.h>
+#include <inttypes.h>
+#include <langinfo.h>
+#include <limits.h>
+#include <linux/types.h>
+#include <linux/fiemap.h>
+#include <linux/fs.h>
+#include <linux/magic.h>
+#include <locale.h>
+#include <memory.h>
+#include <paths.h>
+#include <poll.h>
+#include <pwd.h>
+#include <regex.h>
+#include <signal.h>
+#include <stdarg.h>
+#include <stdint.h>
+#include <stdlib.h>
+#include <string.h>
+#include <strings.h>
+#include <sys/acl.h>
+
+
+int main(){return 0;}
+
+Determining if files sys/types.h;ctype.h;dlfcn.h;errno.h;fcntl.h;grp.h;inttypes.h;langinfo.h;limits.h;linux/types.h;linux/fiemap.h;linux/fs.h;linux/magic.h;locale.h;memory.h;paths.h;poll.h;pwd.h;regex.h;signal.h;stdarg.h;stdint.h;stdlib.h;string.h;strings.h;sys/cdefs.h;sys/ioctl.h;sys/mkdev.h exist failed with the following output:
+Change Dir: /home/lau/cmake-2.8.10.2/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/gmake "cmTryCompileExec744085512/fast"
+gmake -f CMakeFiles/cmTryCompileExec744085512.dir/build.make CMakeFiles/cmTryCompileExec744085512.dir/build
+gmake[1]: Entering directory `/home/lau/cmake-2.8.10.2/CMakeFiles/CMakeTmp'
+/home/lau/cmake-2.8.10.2/Bootstrap.cmk/cmake -E cmake_progress_report /home/lau/cmake-2.8.10.2/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec744085512.dir/CheckIncludeFiles.c.o
+/usr/bin/gcc   -w     -o CMakeFiles/cmTryCompileExec744085512.dir/CheckIncludeFiles.c.o   -c /home/lau/cmake-2.8.10.2/CMakeFiles/CMakeTmp/CheckIncludeFiles.c
+/home/lau/cmake-2.8.10.2/CMakeFiles/CMakeTmp/CheckIncludeFiles.c:29:23: error: sys/mkdev.h: No such file or directory
+gmake[1]: Leaving directory `/home/lau/cmake-2.8.10.2/CMakeFiles/CMakeTmp'
+gmake[1]: *** [CMakeFiles/cmTryCompileExec744085512.dir/CheckIncludeFiles.c.o] Error 1
+gmake: *** [cmTryCompileExec744085512/fast] Error 2
+
+Source:
+/* */
+#include <sys/types.h>
+#include <ctype.h>
+#include <dlfcn.h>
+#include <errno.h>
+#include <fcntl.h>
+#include <grp.h>
+#include <inttypes.h>
+#include <langinfo.h>
+#include <limits.h>
+#include <linux/types.h>
+#include <linux/fiemap.h>
+#include <linux/fs.h>
+#include <linux/magic.h>
+#include <locale.h>
+#include <memory.h>
+#include <paths.h>
+#include <poll.h>
+#include <pwd.h>
+#include <regex.h>
+#include <signal.h>
+#include <stdarg.h>
+#include <stdint.h>
+#include <stdlib.h>
+#include <string.h>
+#include <strings.h>
+#include <sys/cdefs.h>
+#include <sys/ioctl.h>
+#include <sys/mkdev.h>
+
+
+int main(){return 0;}
+
+Determining if files sys/types.h;ctype.h;dlfcn.h;errno.h;fcntl.h;grp.h;inttypes.h;langinfo.h;limits.h;linux/types.h;linux/fiemap.h;linux/fs.h;linux/magic.h;locale.h;memory.h;paths.h;poll.h;pwd.h;regex.h;signal.h;stdarg.h;stdint.h;stdlib.h;string.h;strings.h;sys/cdefs.h;sys/ioctl.h;sys/mount.h exist failed with the following output:
+Change Dir: /home/lau/cmake-2.8.10.2/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/gmake "cmTryCompileExec2282354100/fast"
+gmake -f CMakeFiles/cmTryCompileExec2282354100.dir/build.make CMakeFiles/cmTryCompileExec2282354100.dir/build
+gmake[1]: Entering directory `/home/lau/cmake-2.8.10.2/CMakeFiles/CMakeTmp'
+/home/lau/cmake-2.8.10.2/Bootstrap.cmk/cmake -E cmake_progress_report /home/lau/cmake-2.8.10.2/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec2282354100.dir/CheckIncludeFiles.c.o
+/usr/bin/gcc   -w     -o CMakeFiles/cmTryCompileExec2282354100.dir/CheckIncludeFiles.c.o   -c /home/lau/cmake-2.8.10.2/CMakeFiles/CMakeTmp/CheckIncludeFiles.c
+In file included from /home/lau/cmake-2.8.10.2/CMakeFiles/CMakeTmp/CheckIncludeFiles.c:29:
+/usr/include/sys/mount.h:36: error: expected identifier before numeric constant
+gmake[1]: Leaving directory `/home/lau/cmake-2.8.10.2/CMakeFiles/CMakeTmp'
+gmake[1]: *** [CMakeFiles/cmTryCompileExec2282354100.dir/CheckIncludeFiles.c.o] Error 1
+gmake: *** [cmTryCompileExec2282354100/fast] Error 2
+
+Source:
+/* */
+#include <sys/types.h>
+#include <ctype.h>
+#include <dlfcn.h>
+#include <errno.h>
+#include <fcntl.h>
+#include <grp.h>
+#include <inttypes.h>
+#include <langinfo.h>
+#include <limits.h>
+#include <linux/types.h>
+#include <linux/fiemap.h>
+#include <linux/fs.h>
+#include <linux/magic.h>
+#include <locale.h>
+#include <memory.h>
+#include <paths.h>
+#include <poll.h>
+#include <pwd.h>
+#include <regex.h>
+#include <signal.h>
+#include <stdarg.h>
+#include <stdint.h>
+#include <stdlib.h>
+#include <string.h>
+#include <strings.h>
+#include <sys/cdefs.h>
+#include <sys/ioctl.h>
+#include <sys/mount.h>
+
+
+int main(){return 0;}
+
+Determining if files sys/types.h;ctype.h;dlfcn.h;errno.h;fcntl.h;grp.h;inttypes.h;langinfo.h;limits.h;linux/types.h;linux/fiemap.h;linux/fs.h;linux/magic.h;locale.h;memory.h;paths.h;poll.h;pwd.h;regex.h;signal.h;stdarg.h;stdint.h;stdlib.h;string.h;strings.h;sys/cdefs.h;sys/ioctl.h;sys/param.h;sys/poll.h;sys/select.h;sys/stat.h;sys/statfs.h;sys/statvfs.h;sys/time.h;sys/utsname.h;sys/vfs.h;sys/wait.h;time.h;unistd.h;utime.h;wchar.h;wctype.h;windows.h exist failed with the following output:
+Change Dir: /home/lau/cmake-2.8.10.2/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/gmake "cmTryCompileExec1571494105/fast"
+gmake -f CMakeFiles/cmTryCompileExec1571494105.dir/build.make CMakeFiles/cmTryCompileExec1571494105.dir/build
+gmake[1]: Entering directory `/home/lau/cmake-2.8.10.2/CMakeFiles/CMakeTmp'
+/home/lau/cmake-2.8.10.2/Bootstrap.cmk/cmake -E cmake_progress_report /home/lau/cmake-2.8.10.2/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec1571494105.dir/CheckIncludeFiles.c.o
+/usr/bin/gcc   -w     -o CMakeFiles/cmTryCompileExec1571494105.dir/CheckIncludeFiles.c.o   -c /home/lau/cmake-2.8.10.2/CMakeFiles/CMakeTmp/CheckIncludeFiles.c
+/home/lau/cmake-2.8.10.2/CMakeFiles/CMakeTmp/CheckIncludeFiles.c:44:21: error: windows.h: No such file or directory
+gmake[1]: Leaving directory `/home/lau/cmake-2.8.10.2/CMakeFiles/CMakeTmp'
+gmake[1]: *** [CMakeFiles/cmTryCompileExec1571494105.dir/CheckIncludeFiles.c.o] Error 1
+gmake: *** [cmTryCompileExec1571494105/fast] Error 2
+
+Source:
+/* */
+#include <sys/types.h>
+#include <ctype.h>
+#include <dlfcn.h>
+#include <errno.h>
+#include <fcntl.h>
+#include <grp.h>
+#include <inttypes.h>
+#include <langinfo.h>
+#include <limits.h>
+#include <linux/types.h>
+#include <linux/fiemap.h>
+#include <linux/fs.h>
+#include <linux/magic.h>
+#include <locale.h>
+#include <memory.h>
+#include <paths.h>
+#include <poll.h>
+#include <pwd.h>
+#include <regex.h>
+#include <signal.h>
+#include <stdarg.h>
+#include <stdint.h>
+#include <stdlib.h>
+#include <string.h>
+#include <strings.h>
+#include <sys/cdefs.h>
+#include <sys/ioctl.h>
+#include <sys/param.h>
+#include <sys/poll.h>
+#include <sys/select.h>
+#include <sys/stat.h>
+#include <sys/statfs.h>
+#include <sys/statvfs.h>
+#include <sys/time.h>
+#include <sys/utsname.h>
+#include <sys/vfs.h>
+#include <sys/wait.h>
+#include <time.h>
+#include <unistd.h>
+#include <utime.h>
+#include <wchar.h>
+#include <wctype.h>
+#include <windows.h>
+
+
+int main(){return 0;}
+
+Determining if files sys/types.h;ctype.h;dlfcn.h;errno.h;fcntl.h;grp.h;inttypes.h;langinfo.h;limits.h;linux/types.h;linux/fiemap.h;linux/fs.h;linux/magic.h;locale.h;memory.h;paths.h;poll.h;pwd.h;regex.h;signal.h;stdarg.h;stdint.h;stdlib.h;string.h;strings.h;sys/cdefs.h;sys/ioctl.h;sys/param.h;sys/poll.h;sys/select.h;sys/stat.h;sys/statfs.h;sys/statvfs.h;sys/time.h;sys/utsname.h;sys/vfs.h;sys/wait.h;time.h;unistd.h;utime.h;wchar.h;wctype.h;wincrypt.h exist failed with the following output:
+Change Dir: /home/lau/cmake-2.8.10.2/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/gmake "cmTryCompileExec3682214065/fast"
+gmake -f CMakeFiles/cmTryCompileExec3682214065.dir/build.make CMakeFiles/cmTryCompileExec3682214065.dir/build
+gmake[1]: Entering directory `/home/lau/cmake-2.8.10.2/CMakeFiles/CMakeTmp'
+/home/lau/cmake-2.8.10.2/Bootstrap.cmk/cmake -E cmake_progress_report /home/lau/cmake-2.8.10.2/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec3682214065.dir/CheckIncludeFiles.c.o
+/usr/bin/gcc   -w     -o CMakeFiles/cmTryCompileExec3682214065.dir/CheckIncludeFiles.c.o   -c /home/lau/cmake-2.8.10.2/CMakeFiles/CMakeTmp/CheckIncludeFiles.c
+/home/lau/cmake-2.8.10.2/CMakeFiles/CMakeTmp/CheckIncludeFiles.c:44:22: error: wincrypt.h: No such file or directory
+gmake[1]: Leaving directory `/home/lau/cmake-2.8.10.2/CMakeFiles/CMakeTmp'
+gmake[1]: *** [CMakeFiles/cmTryCompileExec3682214065.dir/CheckIncludeFiles.c.o] Error 1
+gmake: *** [cmTryCompileExec3682214065/fast] Error 2
+
+Source:
+/* */
+#include <sys/types.h>
+#include <ctype.h>
+#include <dlfcn.h>
+#include <errno.h>
+#include <fcntl.h>
+#include <grp.h>
+#include <inttypes.h>
+#include <langinfo.h>
+#include <limits.h>
+#include <linux/types.h>
+#include <linux/fiemap.h>
+#include <linux/fs.h>
+#include <linux/magic.h>
+#include <locale.h>
+#include <memory.h>
+#include <paths.h>
+#include <poll.h>
+#include <pwd.h>
+#include <regex.h>
+#include <signal.h>
+#include <stdarg.h>
+#include <stdint.h>
+#include <stdlib.h>
+#include <string.h>
+#include <strings.h>
+#include <sys/cdefs.h>
+#include <sys/ioctl.h>
+#include <sys/param.h>
+#include <sys/poll.h>
+#include <sys/select.h>
+#include <sys/stat.h>
+#include <sys/statfs.h>
+#include <sys/statvfs.h>
+#include <sys/time.h>
+#include <sys/utsname.h>
+#include <sys/vfs.h>
+#include <sys/wait.h>
+#include <time.h>
+#include <unistd.h>
+#include <utime.h>
+#include <wchar.h>
+#include <wctype.h>
+#include <wincrypt.h>
+
+
+int main(){return 0;}
+
+Determining if files sys/types.h;ctype.h;dlfcn.h;errno.h;fcntl.h;grp.h;inttypes.h;langinfo.h;limits.h;linux/types.h;linux/fiemap.h;linux/fs.h;linux/magic.h;locale.h;memory.h;paths.h;poll.h;pwd.h;regex.h;signal.h;stdarg.h;stdint.h;stdlib.h;string.h;strings.h;sys/cdefs.h;sys/ioctl.h;sys/param.h;sys/poll.h;sys/select.h;sys/stat.h;sys/statfs.h;sys/statvfs.h;sys/time.h;sys/utsname.h;sys/vfs.h;sys/wait.h;time.h;unistd.h;utime.h;wchar.h;wctype.h;winioctl.h exist failed with the following output:
+Change Dir: /home/lau/cmake-2.8.10.2/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/gmake "cmTryCompileExec1646800075/fast"
+gmake -f CMakeFiles/cmTryCompileExec1646800075.dir/build.make CMakeFiles/cmTryCompileExec1646800075.dir/build
+gmake[1]: Entering directory `/home/lau/cmake-2.8.10.2/CMakeFiles/CMakeTmp'
+/home/lau/cmake-2.8.10.2/Bootstrap.cmk/cmake -E cmake_progress_report /home/lau/cmake-2.8.10.2/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec1646800075.dir/CheckIncludeFiles.c.o
+/usr/bin/gcc   -w     -o CMakeFiles/cmTryCompileExec1646800075.dir/CheckIncludeFiles.c.o   -c /home/lau/cmake-2.8.10.2/CMakeFiles/CMakeTmp/CheckIncludeFiles.c
+/home/lau/cmake-2.8.10.2/CMakeFiles/CMakeTmp/CheckIncludeFiles.c:44:22: error: winioctl.h: No such file or directory
+gmake[1]: Leaving directory `/home/lau/cmake-2.8.10.2/CMakeFiles/CMakeTmp'
+gmake[1]: *** [CMakeFiles/cmTryCompileExec1646800075.dir/CheckIncludeFiles.c.o] Error 1
+gmake: *** [cmTryCompileExec1646800075/fast] Error 2
+
+Source:
+/* */
+#include <sys/types.h>
+#include <ctype.h>
+#include <dlfcn.h>
+#include <errno.h>
+#include <fcntl.h>
+#include <grp.h>
+#include <inttypes.h>
+#include <langinfo.h>
+#include <limits.h>
+#include <linux/types.h>
+#include <linux/fiemap.h>
+#include <linux/fs.h>
+#include <linux/magic.h>
+#include <locale.h>
+#include <memory.h>
+#include <paths.h>
+#include <poll.h>
+#include <pwd.h>
+#include <regex.h>
+#include <signal.h>
+#include <stdarg.h>
+#include <stdint.h>
+#include <stdlib.h>
+#include <string.h>
+#include <strings.h>
+#include <sys/cdefs.h>
+#include <sys/ioctl.h>
+#include <sys/param.h>
+#include <sys/poll.h>
+#include <sys/select.h>
+#include <sys/stat.h>
+#include <sys/statfs.h>
+#include <sys/statvfs.h>
+#include <sys/time.h>
+#include <sys/utsname.h>
+#include <sys/vfs.h>
+#include <sys/wait.h>
+#include <time.h>
+#include <unistd.h>
+#include <utime.h>
+#include <wchar.h>
+#include <wctype.h>
+#include <winioctl.h>
+
+
+int main(){return 0;}
+
+Determining if the function MD5Init exists in the md failed with the following output:
+Change Dir: /home/lau/cmake-2.8.10.2/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/gmake "cmTryCompileExec2347011457/fast"
+gmake -f CMakeFiles/cmTryCompileExec2347011457.dir/build.make CMakeFiles/cmTryCompileExec2347011457.dir/build
+gmake[1]: Entering directory `/home/lau/cmake-2.8.10.2/CMakeFiles/CMakeTmp'
+/home/lau/cmake-2.8.10.2/Bootstrap.cmk/cmake -E cmake_progress_report /home/lau/cmake-2.8.10.2/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec2347011457.dir/CheckFunctionExists.c.o
+/usr/bin/gcc   -w  -DCHECK_FUNCTION_EXISTS=MD5Init   -o CMakeFiles/cmTryCompileExec2347011457.dir/CheckFunctionExists.c.o   -c /home/lau/cmake-2.8.10.2/Modules/CheckFunctionExists.c
+Linking C executable cmTryCompileExec2347011457
+/home/lau/cmake-2.8.10.2/Bootstrap.cmk/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec2347011457.dir/link.txt --verbose=1
+/usr/bin/gcc    -w  -DCHECK_FUNCTION_EXISTS=MD5Init    CMakeFiles/cmTryCompileExec2347011457.dir/CheckFunctionExists.c.o  -o cmTryCompileExec2347011457 -rdynamic -lmd 
+/usr/bin/ld: cannot find -lmd
+collect2: ld returned 1 exit status
+gmake[1]: Leaving directory `/home/lau/cmake-2.8.10.2/CMakeFiles/CMakeTmp'
+gmake[1]: *** [cmTryCompileExec2347011457] Error 1
+gmake: *** [cmTryCompileExec2347011457/fast] Error 2
+
+
+Determining if the _CrtSetReportMode exist failed with the following output:
+Change Dir: /home/lau/cmake-2.8.10.2/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/gmake "cmTryCompileExec2398510793/fast"
+gmake -f CMakeFiles/cmTryCompileExec2398510793.dir/build.make CMakeFiles/cmTryCompileExec2398510793.dir/build
+gmake[1]: Entering directory `/home/lau/cmake-2.8.10.2/CMakeFiles/CMakeTmp'
+/home/lau/cmake-2.8.10.2/Bootstrap.cmk/cmake -E cmake_progress_report /home/lau/cmake-2.8.10.2/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec2398510793.dir/CheckSymbolExists.c.o
+/usr/bin/gcc   -w   -fno-builtin   -o CMakeFiles/cmTryCompileExec2398510793.dir/CheckSymbolExists.c.o   -c /home/lau/cmake-2.8.10.2/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+/home/lau/cmake-2.8.10.2/CMakeFiles/CMakeTmp/CheckSymbolExists.c:2:20: error: crtdbg.h: No such file or directory
+/home/lau/cmake-2.8.10.2/CMakeFiles/CMakeTmp/CheckSymbolExists.c: In function ‘main’:
+/home/lau/cmake-2.8.10.2/CMakeFiles/CMakeTmp/CheckSymbolExists.c:8: error: ‘_CrtSetReportMode’ undeclared (first use in this function)
+/home/lau/cmake-2.8.10.2/CMakeFiles/CMakeTmp/CheckSymbolExists.c:8: error: (Each undeclared identifier is reported only once
+/home/lau/cmake-2.8.10.2/CMakeFiles/CMakeTmp/CheckSymbolExists.c:8: error: for each function it appears in.)
+gmake[1]: Leaving directory `/home/lau/cmake-2.8.10.2/CMakeFiles/CMakeTmp'
+gmake[1]: *** [CMakeFiles/cmTryCompileExec2398510793.dir/CheckSymbolExists.c.o] Error 1
+gmake: *** [cmTryCompileExec2398510793/fast] Error 2
+
+File /home/lau/cmake-2.8.10.2/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <crtdbg.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef _CrtSetReportMode
+  return ((int*)(&_CrtSetReportMode))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+
+Determining if the function getvfsbyname exists failed with the following output:
+Change Dir: /home/lau/cmake-2.8.10.2/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/gmake "cmTryCompileExec3419418673/fast"
+gmake -f CMakeFiles/cmTryCompileExec3419418673.dir/build.make CMakeFiles/cmTryCompileExec3419418673.dir/build
+gmake[1]: Entering directory `/home/lau/cmake-2.8.10.2/CMakeFiles/CMakeTmp'
+/home/lau/cmake-2.8.10.2/Bootstrap.cmk/cmake -E cmake_progress_report /home/lau/cmake-2.8.10.2/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec3419418673.dir/CheckFunctionExists.c.o
+/usr/bin/gcc   -w  -DCHECK_FUNCTION_EXISTS=getvfsbyname  -fno-builtin   -o CMakeFiles/cmTryCompileExec3419418673.dir/CheckFunctionExists.c.o   -c /home/lau/cmake-2.8.10.2/Modules/CheckFunctionExists.c
+Linking C executable cmTryCompileExec3419418673
+/home/lau/cmake-2.8.10.2/Bootstrap.cmk/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec3419418673.dir/link.txt --verbose=1
+/usr/bin/gcc    -w  -DCHECK_FUNCTION_EXISTS=getvfsbyname  -fno-builtin    CMakeFiles/cmTryCompileExec3419418673.dir/CheckFunctionExists.c.o  -o cmTryCompileExec3419418673 -rdynamic 
+CMakeFiles/cmTryCompileExec3419418673.dir/CheckFunctionExists.c.o: In function `main':
+CheckFunctionExists.c:(.text+0x7): undefined reference to `getvfsbyname'
+collect2: ld returned 1 exit status
+gmake[1]: Leaving directory `/home/lau/cmake-2.8.10.2/CMakeFiles/CMakeTmp'
+gmake[1]: *** [cmTryCompileExec3419418673] Error 1
+gmake: *** [cmTryCompileExec3419418673/fast] Error 2
+
+
+Determining if the function lchflags exists failed with the following output:
+Change Dir: /home/lau/cmake-2.8.10.2/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/gmake "cmTryCompileExec1144734539/fast"
+gmake -f CMakeFiles/cmTryCompileExec1144734539.dir/build.make CMakeFiles/cmTryCompileExec1144734539.dir/build
+gmake[1]: Entering directory `/home/lau/cmake-2.8.10.2/CMakeFiles/CMakeTmp'
+/home/lau/cmake-2.8.10.2/Bootstrap.cmk/cmake -E cmake_progress_report /home/lau/cmake-2.8.10.2/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec1144734539.dir/CheckFunctionExists.c.o
+/usr/bin/gcc   -w  -DCHECK_FUNCTION_EXISTS=lchflags  -fno-builtin   -o CMakeFiles/cmTryCompileExec1144734539.dir/CheckFunctionExists.c.o   -c /home/lau/cmake-2.8.10.2/Modules/CheckFunctionExists.c
+Linking C executable cmTryCompileExec1144734539
+/home/lau/cmake-2.8.10.2/Bootstrap.cmk/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec1144734539.dir/link.txt --verbose=1
+/usr/bin/gcc    -w  -DCHECK_FUNCTION_EXISTS=lchflags  -fno-builtin    CMakeFiles/cmTryCompileExec1144734539.dir/CheckFunctionExists.c.o  -o cmTryCompileExec1144734539 -rdynamic 
+CMakeFiles/cmTryCompileExec1144734539.dir/CheckFunctionExists.c.o: In function `main':
+CheckFunctionExists.c:(.text+0x7): undefined reference to `lchflags'
+collect2: ld returned 1 exit status
+gmake[1]: Leaving directory `/home/lau/cmake-2.8.10.2/CMakeFiles/CMakeTmp'
+gmake[1]: *** [cmTryCompileExec1144734539] Error 1
+gmake: *** [cmTryCompileExec1144734539/fast] Error 2
+
+
+Determining if the function strncpy_s exists failed with the following output:
+Change Dir: /home/lau/cmake-2.8.10.2/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/gmake "cmTryCompileExec3110472196/fast"
+gmake -f CMakeFiles/cmTryCompileExec3110472196.dir/build.make CMakeFiles/cmTryCompileExec3110472196.dir/build
+gmake[1]: Entering directory `/home/lau/cmake-2.8.10.2/CMakeFiles/CMakeTmp'
+/home/lau/cmake-2.8.10.2/Bootstrap.cmk/cmake -E cmake_progress_report /home/lau/cmake-2.8.10.2/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec3110472196.dir/CheckFunctionExists.c.o
+/usr/bin/gcc   -w  -DCHECK_FUNCTION_EXISTS=strncpy_s  -fno-builtin   -o CMakeFiles/cmTryCompileExec3110472196.dir/CheckFunctionExists.c.o   -c /home/lau/cmake-2.8.10.2/Modules/CheckFunctionExists.c
+Linking C executable cmTryCompileExec3110472196
+/home/lau/cmake-2.8.10.2/Bootstrap.cmk/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec3110472196.dir/link.txt --verbose=1
+/usr/bin/gcc    -w  -DCHECK_FUNCTION_EXISTS=strncpy_s  -fno-builtin    CMakeFiles/cmTryCompileExec3110472196.dir/CheckFunctionExists.c.o  -o cmTryCompileExec3110472196 -rdynamic 
+CMakeFiles/cmTryCompileExec3110472196.dir/CheckFunctionExists.c.o: In function `main':
+CheckFunctionExists.c:(.text+0x7): undefined reference to `strncpy_s'
+collect2: ld returned 1 exit status
+gmake[1]: Leaving directory `/home/lau/cmake-2.8.10.2/CMakeFiles/CMakeTmp'
+gmake[1]: *** [cmTryCompileExec3110472196] Error 1
+gmake: *** [cmTryCompileExec3110472196/fast] Error 2
+
+
+Determining if the function _ctime64_s exists failed with the following output:
+Change Dir: /home/lau/cmake-2.8.10.2/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/gmake "cmTryCompileExec3208352534/fast"
+gmake -f CMakeFiles/cmTryCompileExec3208352534.dir/build.make CMakeFiles/cmTryCompileExec3208352534.dir/build
+gmake[1]: Entering directory `/home/lau/cmake-2.8.10.2/CMakeFiles/CMakeTmp'
+/home/lau/cmake-2.8.10.2/Bootstrap.cmk/cmake -E cmake_progress_report /home/lau/cmake-2.8.10.2/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec3208352534.dir/CheckFunctionExists.c.o
+/usr/bin/gcc   -w  -DCHECK_FUNCTION_EXISTS=_ctime64_s  -fno-builtin   -o CMakeFiles/cmTryCompileExec3208352534.dir/CheckFunctionExists.c.o   -c /home/lau/cmake-2.8.10.2/Modules/CheckFunctionExists.c
+Linking C executable cmTryCompileExec3208352534
+/home/lau/cmake-2.8.10.2/Bootstrap.cmk/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec3208352534.dir/link.txt --verbose=1
+/usr/bin/gcc    -w  -DCHECK_FUNCTION_EXISTS=_ctime64_s  -fno-builtin    CMakeFiles/cmTryCompileExec3208352534.dir/CheckFunctionExists.c.o  -o cmTryCompileExec3208352534 -rdynamic 
+CMakeFiles/cmTryCompileExec3208352534.dir/CheckFunctionExists.c.o: In function `main':
+CheckFunctionExists.c:(.text+0x7): undefined reference to `_ctime64_s'
+collect2: ld returned 1 exit status
+gmake[1]: Leaving directory `/home/lau/cmake-2.8.10.2/CMakeFiles/CMakeTmp'
+gmake[1]: *** [cmTryCompileExec3208352534] Error 1
+gmake: *** [cmTryCompileExec3208352534/fast] Error 2
+
+
+Determining if the function _fseeki64 exists failed with the following output:
+Change Dir: /home/lau/cmake-2.8.10.2/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/gmake "cmTryCompileExec1227396200/fast"
+gmake -f CMakeFiles/cmTryCompileExec1227396200.dir/build.make CMakeFiles/cmTryCompileExec1227396200.dir/build
+gmake[1]: Entering directory `/home/lau/cmake-2.8.10.2/CMakeFiles/CMakeTmp'
+/home/lau/cmake-2.8.10.2/Bootstrap.cmk/cmake -E cmake_progress_report /home/lau/cmake-2.8.10.2/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec1227396200.dir/CheckFunctionExists.c.o
+/usr/bin/gcc   -w  -DCHECK_FUNCTION_EXISTS=_fseeki64  -fno-builtin   -o CMakeFiles/cmTryCompileExec1227396200.dir/CheckFunctionExists.c.o   -c /home/lau/cmake-2.8.10.2/Modules/CheckFunctionExists.c
+Linking C executable cmTryCompileExec1227396200
+/home/lau/cmake-2.8.10.2/Bootstrap.cmk/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec1227396200.dir/link.txt --verbose=1
+/usr/bin/gcc    -w  -DCHECK_FUNCTION_EXISTS=_fseeki64  -fno-builtin    CMakeFiles/cmTryCompileExec1227396200.dir/CheckFunctionExists.c.o  -o cmTryCompileExec1227396200 -rdynamic 
+CMakeFiles/cmTryCompileExec1227396200.dir/CheckFunctionExists.c.o: In function `main':
+CheckFunctionExists.c:(.text+0x7): undefined reference to `_fseeki64'
+collect2: ld returned 1 exit status
+gmake[1]: Leaving directory `/home/lau/cmake-2.8.10.2/CMakeFiles/CMakeTmp'
+gmake[1]: *** [cmTryCompileExec1227396200] Error 1
+gmake: *** [cmTryCompileExec1227396200/fast] Error 2
+
+
+Determining if the function _get_timezone exists failed with the following output:
+Change Dir: /home/lau/cmake-2.8.10.2/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/gmake "cmTryCompileExec404393244/fast"
+gmake -f CMakeFiles/cmTryCompileExec404393244.dir/build.make CMakeFiles/cmTryCompileExec404393244.dir/build
+gmake[1]: Entering directory `/home/lau/cmake-2.8.10.2/CMakeFiles/CMakeTmp'
+/home/lau/cmake-2.8.10.2/Bootstrap.cmk/cmake -E cmake_progress_report /home/lau/cmake-2.8.10.2/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec404393244.dir/CheckFunctionExists.c.o
+/usr/bin/gcc   -w  -DCHECK_FUNCTION_EXISTS=_get_timezone  -fno-builtin   -o CMakeFiles/cmTryCompileExec404393244.dir/CheckFunctionExists.c.o   -c /home/lau/cmake-2.8.10.2/Modules/CheckFunctionExists.c
+Linking C executable cmTryCompileExec404393244
+/home/lau/cmake-2.8.10.2/Bootstrap.cmk/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec404393244.dir/link.txt --verbose=1
+/usr/bin/gcc    -w  -DCHECK_FUNCTION_EXISTS=_get_timezone  -fno-builtin    CMakeFiles/cmTryCompileExec404393244.dir/CheckFunctionExists.c.o  -o cmTryCompileExec404393244 -rdynamic 
+CMakeFiles/cmTryCompileExec404393244.dir/CheckFunctionExists.c.o: In function `main':
+CheckFunctionExists.c:(.text+0x7): undefined reference to `_get_timezone'
+collect2: ld returned 1 exit status
+gmake[1]: Leaving directory `/home/lau/cmake-2.8.10.2/CMakeFiles/CMakeTmp'
+gmake[1]: *** [cmTryCompileExec404393244] Error 1
+gmake: *** [cmTryCompileExec404393244/fast] Error 2
+
+
+Determining if the function _localtime64_s exists failed with the following output:
+Change Dir: /home/lau/cmake-2.8.10.2/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/gmake "cmTryCompileExec859368211/fast"
+gmake -f CMakeFiles/cmTryCompileExec859368211.dir/build.make CMakeFiles/cmTryCompileExec859368211.dir/build
+gmake[1]: Entering directory `/home/lau/cmake-2.8.10.2/CMakeFiles/CMakeTmp'
+/home/lau/cmake-2.8.10.2/Bootstrap.cmk/cmake -E cmake_progress_report /home/lau/cmake-2.8.10.2/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec859368211.dir/CheckFunctionExists.c.o
+/usr/bin/gcc   -w  -DCHECK_FUNCTION_EXISTS=_localtime64_s  -fno-builtin   -o CMakeFiles/cmTryCompileExec859368211.dir/CheckFunctionExists.c.o   -c /home/lau/cmake-2.8.10.2/Modules/CheckFunctionExists.c
+Linking C executable cmTryCompileExec859368211
+/home/lau/cmake-2.8.10.2/Bootstrap.cmk/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec859368211.dir/link.txt --verbose=1
+/usr/bin/gcc    -w  -DCHECK_FUNCTION_EXISTS=_localtime64_s  -fno-builtin    CMakeFiles/cmTryCompileExec859368211.dir/CheckFunctionExists.c.o  -o cmTryCompileExec859368211 -rdynamic 
+CMakeFiles/cmTryCompileExec859368211.dir/CheckFunctionExists.c.o: In function `main':
+CheckFunctionExists.c:(.text+0x7): undefined reference to `_localtime64_s'
+collect2: ld returned 1 exit status
+gmake[1]: Leaving directory `/home/lau/cmake-2.8.10.2/CMakeFiles/CMakeTmp'
+gmake[1]: *** [cmTryCompileExec859368211] Error 1
+gmake: *** [cmTryCompileExec859368211/fast] Error 2
+
+
+Determining if the function _mkgmtime64 exists failed with the following output:
+Change Dir: /home/lau/cmake-2.8.10.2/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/gmake "cmTryCompileExec4285240892/fast"
+gmake -f CMakeFiles/cmTryCompileExec4285240892.dir/build.make CMakeFiles/cmTryCompileExec4285240892.dir/build
+gmake[1]: Entering directory `/home/lau/cmake-2.8.10.2/CMakeFiles/CMakeTmp'
+/home/lau/cmake-2.8.10.2/Bootstrap.cmk/cmake -E cmake_progress_report /home/lau/cmake-2.8.10.2/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec4285240892.dir/CheckFunctionExists.c.o
+/usr/bin/gcc   -w  -DCHECK_FUNCTION_EXISTS=_mkgmtime64  -fno-builtin   -o CMakeFiles/cmTryCompileExec4285240892.dir/CheckFunctionExists.c.o   -c /home/lau/cmake-2.8.10.2/Modules/CheckFunctionExists.c
+Linking C executable cmTryCompileExec4285240892
+/home/lau/cmake-2.8.10.2/Bootstrap.cmk/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec4285240892.dir/link.txt --verbose=1
+/usr/bin/gcc    -w  -DCHECK_FUNCTION_EXISTS=_mkgmtime64  -fno-builtin    CMakeFiles/cmTryCompileExec4285240892.dir/CheckFunctionExists.c.o  -o cmTryCompileExec4285240892 -rdynamic 
+CMakeFiles/cmTryCompileExec4285240892.dir/CheckFunctionExists.c.o: In function `main':
+CheckFunctionExists.c:(.text+0x7): undefined reference to `_mkgmtime64'
+collect2: ld returned 1 exit status
+gmake[1]: Leaving directory `/home/lau/cmake-2.8.10.2/CMakeFiles/CMakeTmp'
+gmake[1]: *** [cmTryCompileExec4285240892] Error 1
+gmake: *** [cmTryCompileExec4285240892/fast] Error 2
+
+
+Determining if the function cygwin_conv_path exists failed with the following output:
+Change Dir: /home/lau/cmake-2.8.10.2/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/gmake "cmTryCompileExec273652377/fast"
+gmake -f CMakeFiles/cmTryCompileExec273652377.dir/build.make CMakeFiles/cmTryCompileExec273652377.dir/build
+gmake[1]: Entering directory `/home/lau/cmake-2.8.10.2/CMakeFiles/CMakeTmp'
+/home/lau/cmake-2.8.10.2/Bootstrap.cmk/cmake -E cmake_progress_report /home/lau/cmake-2.8.10.2/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec273652377.dir/CheckFunctionExists.c.o
+/usr/bin/gcc   -w  -DCHECK_FUNCTION_EXISTS=cygwin_conv_path  -fno-builtin   -o CMakeFiles/cmTryCompileExec273652377.dir/CheckFunctionExists.c.o   -c /home/lau/cmake-2.8.10.2/Modules/CheckFunctionExists.c
+Linking C executable cmTryCompileExec273652377
+/home/lau/cmake-2.8.10.2/Bootstrap.cmk/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec273652377.dir/link.txt --verbose=1
+/usr/bin/gcc    -w  -DCHECK_FUNCTION_EXISTS=cygwin_conv_path  -fno-builtin    CMakeFiles/cmTryCompileExec273652377.dir/CheckFunctionExists.c.o  -o cmTryCompileExec273652377 -rdynamic 
+CMakeFiles/cmTryCompileExec273652377.dir/CheckFunctionExists.c.o: In function `main':
+CheckFunctionExists.c:(.text+0x7): undefined reference to `cygwin_conv_path'
+collect2: ld returned 1 exit status
+gmake[1]: Leaving directory `/home/lau/cmake-2.8.10.2/CMakeFiles/CMakeTmp'
+gmake[1]: *** [cmTryCompileExec273652377] Error 1
+gmake: *** [cmTryCompileExec273652377/fast] Error 2
+
+
+Performing C SOURCE FILE Test MAJOR_IN_MKDEV failed with the following output:
+Change Dir: /home/lau/cmake-2.8.10.2/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/gmake "cmTryCompileExec3926294838/fast"
+gmake -f CMakeFiles/cmTryCompileExec3926294838.dir/build.make CMakeFiles/cmTryCompileExec3926294838.dir/build
+gmake[1]: Entering directory `/home/lau/cmake-2.8.10.2/CMakeFiles/CMakeTmp'
+/home/lau/cmake-2.8.10.2/Bootstrap.cmk/cmake -E cmake_progress_report /home/lau/cmake-2.8.10.2/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec3926294838.dir/src.c.o
+/usr/bin/gcc   -w  -DMAJOR_IN_MKDEV   -o CMakeFiles/cmTryCompileExec3926294838.dir/src.c.o   -c /home/lau/cmake-2.8.10.2/CMakeFiles/CMakeTmp/src.c
+/home/lau/cmake-2.8.10.2/CMakeFiles/CMakeTmp/src.c:1:23: error: sys/mkdev.h: No such file or directory
+gmake[1]: Leaving directory `/home/lau/cmake-2.8.10.2/CMakeFiles/CMakeTmp'
+gmake[1]: *** [CMakeFiles/cmTryCompileExec3926294838.dir/src.c.o] Error 1
+gmake: *** [cmTryCompileExec3926294838/fast] Error 2
+
+Source file was:
+#include <sys/mkdev.h>
+int main() { return major(256); }
+Determining if the EFTYPE exist failed with the following output:
+Change Dir: /home/lau/cmake-2.8.10.2/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/gmake "cmTryCompileExec1963461203/fast"
+gmake -f CMakeFiles/cmTryCompileExec1963461203.dir/build.make CMakeFiles/cmTryCompileExec1963461203.dir/build
+gmake[1]: Entering directory `/home/lau/cmake-2.8.10.2/CMakeFiles/CMakeTmp'
+/home/lau/cmake-2.8.10.2/Bootstrap.cmk/cmake -E cmake_progress_report /home/lau/cmake-2.8.10.2/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec1963461203.dir/CheckSymbolExists.c.o
+/usr/bin/gcc   -w     -o CMakeFiles/cmTryCompileExec1963461203.dir/CheckSymbolExists.c.o   -c /home/lau/cmake-2.8.10.2/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+/home/lau/cmake-2.8.10.2/CMakeFiles/CMakeTmp/CheckSymbolExists.c: In function ‘main’:
+/home/lau/cmake-2.8.10.2/CMakeFiles/CMakeTmp/CheckSymbolExists.c:8: error: ‘EFTYPE’ undeclared (first use in this function)
+/home/lau/cmake-2.8.10.2/CMakeFiles/CMakeTmp/CheckSymbolExists.c:8: error: (Each undeclared identifier is reported only once
+/home/lau/cmake-2.8.10.2/CMakeFiles/CMakeTmp/CheckSymbolExists.c:8: error: for each function it appears in.)
+gmake[1]: Leaving directory `/home/lau/cmake-2.8.10.2/CMakeFiles/CMakeTmp'
+gmake[1]: *** [CMakeFiles/cmTryCompileExec1963461203.dir/CheckSymbolExists.c.o] Error 1
+gmake: *** [cmTryCompileExec1963461203/fast] Error 2
+
+File /home/lau/cmake-2.8.10.2/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <errno.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef EFTYPE
+  return ((int*)(&EFTYPE))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+
+Determining if the D_MD_ORDER exist failed with the following output:
+Change Dir: /home/lau/cmake-2.8.10.2/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/gmake "cmTryCompileExec2072105018/fast"
+gmake -f CMakeFiles/cmTryCompileExec2072105018.dir/build.make CMakeFiles/cmTryCompileExec2072105018.dir/build
+gmake[1]: Entering directory `/home/lau/cmake-2.8.10.2/CMakeFiles/CMakeTmp'
+/home/lau/cmake-2.8.10.2/Bootstrap.cmk/cmake -E cmake_progress_report /home/lau/cmake-2.8.10.2/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec2072105018.dir/CheckSymbolExists.c.o
+/usr/bin/gcc   -w     -o CMakeFiles/cmTryCompileExec2072105018.dir/CheckSymbolExists.c.o   -c /home/lau/cmake-2.8.10.2/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+/home/lau/cmake-2.8.10.2/CMakeFiles/CMakeTmp/CheckSymbolExists.c: In function ‘main’:
+/home/lau/cmake-2.8.10.2/CMakeFiles/CMakeTmp/CheckSymbolExists.c:8: error: ‘D_MD_ORDER’ undeclared (first use in this function)
+/home/lau/cmake-2.8.10.2/CMakeFiles/CMakeTmp/CheckSymbolExists.c:8: error: (Each undeclared identifier is reported only once
+/home/lau/cmake-2.8.10.2/CMakeFiles/CMakeTmp/CheckSymbolExists.c:8: error: for each function it appears in.)
+gmake[1]: Leaving directory `/home/lau/cmake-2.8.10.2/CMakeFiles/CMakeTmp'
+gmake[1]: *** [CMakeFiles/cmTryCompileExec2072105018.dir/CheckSymbolExists.c.o] Error 1
+gmake: *** [cmTryCompileExec2072105018/fast] Error 2
+
+File /home/lau/cmake-2.8.10.2/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <langinfo.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef D_MD_ORDER
+  return ((int*)(&D_MD_ORDER))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+
+Performing C SOURCE FILE Test HAVE_STRUCT_TM___TM_GMTOFF failed with the following output:
+Change Dir: /home/lau/cmake-2.8.10.2/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/gmake "cmTryCompileExec3244903368/fast"
+gmake -f CMakeFiles/cmTryCompileExec3244903368.dir/build.make CMakeFiles/cmTryCompileExec3244903368.dir/build
+gmake[1]: Entering directory `/home/lau/cmake-2.8.10.2/CMakeFiles/CMakeTmp'
+/home/lau/cmake-2.8.10.2/Bootstrap.cmk/cmake -E cmake_progress_report /home/lau/cmake-2.8.10.2/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec3244903368.dir/src.c.o
+/usr/bin/gcc   -w  -DHAVE_STRUCT_TM___TM_GMTOFF   -o CMakeFiles/cmTryCompileExec3244903368.dir/src.c.o   -c /home/lau/cmake-2.8.10.2/CMakeFiles/CMakeTmp/src.c
+/home/lau/cmake-2.8.10.2/CMakeFiles/CMakeTmp/src.c: In function ‘main’:
+/home/lau/cmake-2.8.10.2/CMakeFiles/CMakeTmp/src.c:7: error: ‘struct tm’ has no member named ‘__tm_gmtoff’
+gmake[1]: Leaving directory `/home/lau/cmake-2.8.10.2/CMakeFiles/CMakeTmp'
+gmake[1]: *** [CMakeFiles/cmTryCompileExec3244903368.dir/src.c.o] Error 1
+gmake: *** [cmTryCompileExec3244903368/fast] Error 2
+
+Source file was:
+
+#include <time.h>
+
+int main()
+{
+   static struct tm tmp;
+   if (sizeof(tmp.__tm_gmtoff))
+      return 0;
+  return 0;
+}
+
+Performing C SOURCE FILE Test HAVE_STRUCT_STATFS_F_NAMEMAX failed with the following output:
+Change Dir: /home/lau/cmake-2.8.10.2/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/gmake "cmTryCompileExec292670315/fast"
+gmake -f CMakeFiles/cmTryCompileExec292670315.dir/build.make CMakeFiles/cmTryCompileExec292670315.dir/build
+gmake[1]: Entering directory `/home/lau/cmake-2.8.10.2/CMakeFiles/CMakeTmp'
+/home/lau/cmake-2.8.10.2/Bootstrap.cmk/cmake -E cmake_progress_report /home/lau/cmake-2.8.10.2/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec292670315.dir/src.c.o
+/usr/bin/gcc   -w  -DHAVE_STRUCT_STATFS_F_NAMEMAX   -o CMakeFiles/cmTryCompileExec292670315.dir/src.c.o   -c /home/lau/cmake-2.8.10.2/CMakeFiles/CMakeTmp/src.c
+/home/lau/cmake-2.8.10.2/CMakeFiles/CMakeTmp/src.c: In function ‘main’:
+/home/lau/cmake-2.8.10.2/CMakeFiles/CMakeTmp/src.c:7: error: storage size of ‘tmp’ isn’t known
+gmake[1]: Leaving directory `/home/lau/cmake-2.8.10.2/CMakeFiles/CMakeTmp'
+gmake[1]: *** [CMakeFiles/cmTryCompileExec292670315.dir/src.c.o] Error 1
+gmake: *** [cmTryCompileExec292670315/fast] Error 2
+
+Source file was:
+
+#include <sys/param.h>
+#include <sys/mount.h>
+
+int main()
+{
+   static struct statfs tmp;
+   if (sizeof(tmp.f_namemax))
+      return 0;
+  return 0;
+}
+
+Performing C SOURCE FILE Test HAVE_STRUCT_STAT_ST_BIRTHTIME failed with the following output:
+Change Dir: /home/lau/cmake-2.8.10.2/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/gmake "cmTryCompileExec2728781337/fast"
+gmake -f CMakeFiles/cmTryCompileExec2728781337.dir/build.make CMakeFiles/cmTryCompileExec2728781337.dir/build
+gmake[1]: Entering directory `/home/lau/cmake-2.8.10.2/CMakeFiles/CMakeTmp'
+/home/lau/cmake-2.8.10.2/Bootstrap.cmk/cmake -E cmake_progress_report /home/lau/cmake-2.8.10.2/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec2728781337.dir/src.c.o
+/usr/bin/gcc   -w  -DHAVE_STRUCT_STAT_ST_BIRTHTIME   -o CMakeFiles/cmTryCompileExec2728781337.dir/src.c.o   -c /home/lau/cmake-2.8.10.2/CMakeFiles/CMakeTmp/src.c
+/home/lau/cmake-2.8.10.2/CMakeFiles/CMakeTmp/src.c: In function ‘main’:
+/home/lau/cmake-2.8.10.2/CMakeFiles/CMakeTmp/src.c:8: error: ‘struct stat’ has no member named ‘st_birthtime’
+gmake[1]: Leaving directory `/home/lau/cmake-2.8.10.2/CMakeFiles/CMakeTmp'
+gmake[1]: *** [CMakeFiles/cmTryCompileExec2728781337.dir/src.c.o] Error 1
+gmake: *** [cmTryCompileExec2728781337/fast] Error 2
+
+Source file was:
+
+#include <sys/types.h>
+#include <sys/stat.h>
+
+int main()
+{
+   static struct stat tmp;
+   if (sizeof(tmp.st_birthtime))
+      return 0;
+  return 0;
+}
+
+Performing C SOURCE FILE Test HAVE_STRUCT_STAT_ST_BIRTHTIMESPEC_TV_NSEC failed with the following output:
+Change Dir: /home/lau/cmake-2.8.10.2/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/gmake "cmTryCompileExec3541986830/fast"
+gmake -f CMakeFiles/cmTryCompileExec3541986830.dir/build.make CMakeFiles/cmTryCompileExec3541986830.dir/build
+gmake[1]: Entering directory `/home/lau/cmake-2.8.10.2/CMakeFiles/CMakeTmp'
+/home/lau/cmake-2.8.10.2/Bootstrap.cmk/cmake -E cmake_progress_report /home/lau/cmake-2.8.10.2/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec3541986830.dir/src.c.o
+/usr/bin/gcc   -w  -DHAVE_STRUCT_STAT_ST_BIRTHTIMESPEC_TV_NSEC   -o CMakeFiles/cmTryCompileExec3541986830.dir/src.c.o   -c /home/lau/cmake-2.8.10.2/CMakeFiles/CMakeTmp/src.c
+/home/lau/cmake-2.8.10.2/CMakeFiles/CMakeTmp/src.c: In function ‘main’:
+/home/lau/cmake-2.8.10.2/CMakeFiles/CMakeTmp/src.c:8: error: ‘struct stat’ has no member named ‘st_birthtimespec’
+gmake[1]: Leaving directory `/home/lau/cmake-2.8.10.2/CMakeFiles/CMakeTmp'
+gmake[1]: *** [CMakeFiles/cmTryCompileExec3541986830.dir/src.c.o] Error 1
+gmake: *** [cmTryCompileExec3541986830/fast] Error 2
+
+Source file was:
+
+#include <sys/types.h>
+#include <sys/stat.h>
+
+int main()
+{
+   static struct stat tmp;
+   if (sizeof(tmp.st_birthtimespec.tv_nsec))
+      return 0;
+  return 0;
+}
+
+Performing C SOURCE FILE Test HAVE_STRUCT_STAT_ST_MTIMESPEC_TV_NSEC failed with the following output:
+Change Dir: /home/lau/cmake-2.8.10.2/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/gmake "cmTryCompileExec530697457/fast"
+gmake -f CMakeFiles/cmTryCompileExec530697457.dir/build.make CMakeFiles/cmTryCompileExec530697457.dir/build
+gmake[1]: Entering directory `/home/lau/cmake-2.8.10.2/CMakeFiles/CMakeTmp'
+/home/lau/cmake-2.8.10.2/Bootstrap.cmk/cmake -E cmake_progress_report /home/lau/cmake-2.8.10.2/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec530697457.dir/src.c.o
+/usr/bin/gcc   -w  -DHAVE_STRUCT_STAT_ST_MTIMESPEC_TV_NSEC   -o CMakeFiles/cmTryCompileExec530697457.dir/src.c.o   -c /home/lau/cmake-2.8.10.2/CMakeFiles/CMakeTmp/src.c
+/home/lau/cmake-2.8.10.2/CMakeFiles/CMakeTmp/src.c: In function ‘main’:
+/home/lau/cmake-2.8.10.2/CMakeFiles/CMakeTmp/src.c:8: error: ‘struct stat’ has no member named ‘st_mtimespec’
+gmake[1]: Leaving directory `/home/lau/cmake-2.8.10.2/CMakeFiles/CMakeTmp'
+gmake[1]: *** [CMakeFiles/cmTryCompileExec530697457.dir/src.c.o] Error 1
+gmake: *** [cmTryCompileExec530697457/fast] Error 2
+
+Source file was:
+
+#include <sys/types.h>
+#include <sys/stat.h>
+
+int main()
+{
+   static struct stat tmp;
+   if (sizeof(tmp.st_mtimespec.tv_nsec))
+      return 0;
+  return 0;
+}
+
+Performing C SOURCE FILE Test HAVE_STRUCT_STAT_ST_MTIME_N failed with the following output:
+Change Dir: /home/lau/cmake-2.8.10.2/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/gmake "cmTryCompileExec365715507/fast"
+gmake -f CMakeFiles/cmTryCompileExec365715507.dir/build.make CMakeFiles/cmTryCompileExec365715507.dir/build
+gmake[1]: Entering directory `/home/lau/cmake-2.8.10.2/CMakeFiles/CMakeTmp'
+/home/lau/cmake-2.8.10.2/Bootstrap.cmk/cmake -E cmake_progress_report /home/lau/cmake-2.8.10.2/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec365715507.dir/src.c.o
+/usr/bin/gcc   -w  -DHAVE_STRUCT_STAT_ST_MTIME_N   -o CMakeFiles/cmTryCompileExec365715507.dir/src.c.o   -c /home/lau/cmake-2.8.10.2/CMakeFiles/CMakeTmp/src.c
+/home/lau/cmake-2.8.10.2/CMakeFiles/CMakeTmp/src.c: In function ‘main’:
+/home/lau/cmake-2.8.10.2/CMakeFiles/CMakeTmp/src.c:8: error: ‘struct stat’ has no member named ‘st_mtime_n’
+gmake[1]: Leaving directory `/home/lau/cmake-2.8.10.2/CMakeFiles/CMakeTmp'
+gmake[1]: *** [CMakeFiles/cmTryCompileExec365715507.dir/src.c.o] Error 1
+gmake: *** [cmTryCompileExec365715507/fast] Error 2
+
+Source file was:
+
+#include <sys/types.h>
+#include <sys/stat.h>
+
+int main()
+{
+   static struct stat tmp;
+   if (sizeof(tmp.st_mtime_n))
+      return 0;
+  return 0;
+}
+
+Performing C SOURCE FILE Test HAVE_STRUCT_STAT_ST_UMTIME failed with the following output:
+Change Dir: /home/lau/cmake-2.8.10.2/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/gmake "cmTryCompileExec2733100527/fast"
+gmake -f CMakeFiles/cmTryCompileExec2733100527.dir/build.make CMakeFiles/cmTryCompileExec2733100527.dir/build
+gmake[1]: Entering directory `/home/lau/cmake-2.8.10.2/CMakeFiles/CMakeTmp'
+/home/lau/cmake-2.8.10.2/Bootstrap.cmk/cmake -E cmake_progress_report /home/lau/cmake-2.8.10.2/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec2733100527.dir/src.c.o
+/usr/bin/gcc   -w  -DHAVE_STRUCT_STAT_ST_UMTIME   -o CMakeFiles/cmTryCompileExec2733100527.dir/src.c.o   -c /home/lau/cmake-2.8.10.2/CMakeFiles/CMakeTmp/src.c
+/home/lau/cmake-2.8.10.2/CMakeFiles/CMakeTmp/src.c: In function ‘main’:
+/home/lau/cmake-2.8.10.2/CMakeFiles/CMakeTmp/src.c:8: error: ‘struct stat’ has no member named ‘st_umtime’
+gmake[1]: Leaving directory `/home/lau/cmake-2.8.10.2/CMakeFiles/CMakeTmp'
+gmake[1]: *** [CMakeFiles/cmTryCompileExec2733100527.dir/src.c.o] Error 1
+gmake: *** [cmTryCompileExec2733100527/fast] Error 2
+
+Source file was:
+
+#include <sys/types.h>
+#include <sys/stat.h>
+
+int main()
+{
+   static struct stat tmp;
+   if (sizeof(tmp.st_umtime))
+      return 0;
+  return 0;
+}
+
+Performing C SOURCE FILE Test HAVE_STRUCT_STAT_ST_MTIME_USEC failed with the following output:
+Change Dir: /home/lau/cmake-2.8.10.2/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/gmake "cmTryCompileExec2004481152/fast"
+gmake -f CMakeFiles/cmTryCompileExec2004481152.dir/build.make CMakeFiles/cmTryCompileExec2004481152.dir/build
+gmake[1]: Entering directory `/home/lau/cmake-2.8.10.2/CMakeFiles/CMakeTmp'
+/home/lau/cmake-2.8.10.2/Bootstrap.cmk/cmake -E cmake_progress_report /home/lau/cmake-2.8.10.2/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec2004481152.dir/src.c.o
+/usr/bin/gcc   -w  -DHAVE_STRUCT_STAT_ST_MTIME_USEC   -o CMakeFiles/cmTryCompileExec2004481152.dir/src.c.o   -c /home/lau/cmake-2.8.10.2/CMakeFiles/CMakeTmp/src.c
+/home/lau/cmake-2.8.10.2/CMakeFiles/CMakeTmp/src.c: In function ‘main’:
+/home/lau/cmake-2.8.10.2/CMakeFiles/CMakeTmp/src.c:8: error: ‘struct stat’ has no member named ‘st_mtime_usec’
+gmake[1]: Leaving directory `/home/lau/cmake-2.8.10.2/CMakeFiles/CMakeTmp'
+gmake[1]: *** [CMakeFiles/cmTryCompileExec2004481152.dir/src.c.o] Error 1
+gmake: *** [cmTryCompileExec2004481152/fast] Error 2
+
+Source file was:
+
+#include <sys/types.h>
+#include <sys/stat.h>
+
+int main()
+{
+   static struct stat tmp;
+   if (sizeof(tmp.st_mtime_usec))
+      return 0;
+  return 0;
+}
+
+Performing C SOURCE FILE Test HAVE_STRUCT_STAT_ST_FLAGS failed with the following output:
+Change Dir: /home/lau/cmake-2.8.10.2/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/gmake "cmTryCompileExec1562225340/fast"
+gmake -f CMakeFiles/cmTryCompileExec1562225340.dir/build.make CMakeFiles/cmTryCompileExec1562225340.dir/build
+gmake[1]: Entering directory `/home/lau/cmake-2.8.10.2/CMakeFiles/CMakeTmp'
+/home/lau/cmake-2.8.10.2/Bootstrap.cmk/cmake -E cmake_progress_report /home/lau/cmake-2.8.10.2/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec1562225340.dir/src.c.o
+/usr/bin/gcc   -w  -DHAVE_STRUCT_STAT_ST_FLAGS   -o CMakeFiles/cmTryCompileExec1562225340.dir/src.c.o   -c /home/lau/cmake-2.8.10.2/CMakeFiles/CMakeTmp/src.c
+/home/lau/cmake-2.8.10.2/CMakeFiles/CMakeTmp/src.c: In function ‘main’:
+/home/lau/cmake-2.8.10.2/CMakeFiles/CMakeTmp/src.c:8: error: ‘struct stat’ has no member named ‘st_flags’
+gmake[1]: Leaving directory `/home/lau/cmake-2.8.10.2/CMakeFiles/CMakeTmp'
+gmake[1]: *** [CMakeFiles/cmTryCompileExec1562225340.dir/src.c.o] Error 1
+gmake: *** [cmTryCompileExec1562225340/fast] Error 2
+
+Source file was:
+
+#include <sys/types.h>
+#include <sys/stat.h>
+
+int main()
+{
+   static struct stat tmp;
+   if (sizeof(tmp.st_flags))
+      return 0;
+  return 0;
+}
+
+Performing C SOURCE FILE Test HAVE_STRUCT_STATVFS_F_IOSIZE failed with the following output:
+Change Dir: /home/lau/cmake-2.8.10.2/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/gmake "cmTryCompileExec1150640643/fast"
+gmake -f CMakeFiles/cmTryCompileExec1150640643.dir/build.make CMakeFiles/cmTryCompileExec1150640643.dir/build
+gmake[1]: Entering directory `/home/lau/cmake-2.8.10.2/CMakeFiles/CMakeTmp'
+/home/lau/cmake-2.8.10.2/Bootstrap.cmk/cmake -E cmake_progress_report /home/lau/cmake-2.8.10.2/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec1150640643.dir/src.c.o
+/usr/bin/gcc   -w  -DHAVE_STRUCT_STATVFS_F_IOSIZE   -o CMakeFiles/cmTryCompileExec1150640643.dir/src.c.o   -c /home/lau/cmake-2.8.10.2/CMakeFiles/CMakeTmp/src.c
+/home/lau/cmake-2.8.10.2/CMakeFiles/CMakeTmp/src.c: In function ‘main’:
+/home/lau/cmake-2.8.10.2/CMakeFiles/CMakeTmp/src.c:8: error: ‘struct statvfs’ has no member named ‘f_iosize’
+gmake[1]: Leaving directory `/home/lau/cmake-2.8.10.2/CMakeFiles/CMakeTmp'
+gmake[1]: *** [CMakeFiles/cmTryCompileExec1150640643.dir/src.c.o] Error 1
+gmake: *** [cmTryCompileExec1150640643/fast] Error 2
+
+Source file was:
+
+#include <sys/types.h>
+#include <sys/statvfs.h>
+
+int main()
+{
+   static struct statvfs tmp;
+   if (sizeof(tmp.f_iosize))
+      return 0;
+  return 0;
+}
+
+Determining size of __int64 failed with the following output:
+Change Dir: /home/lau/cmake-2.8.10.2/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/gmake "cmTryCompileExec1024094628/fast"
+gmake -f CMakeFiles/cmTryCompileExec1024094628.dir/build.make CMakeFiles/cmTryCompileExec1024094628.dir/build
+gmake[1]: Entering directory `/home/lau/cmake-2.8.10.2/CMakeFiles/CMakeTmp'
+/home/lau/cmake-2.8.10.2/Bootstrap.cmk/cmake -E cmake_progress_report /home/lau/cmake-2.8.10.2/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec1024094628.dir/__INT64.c.o
+/usr/bin/gcc   -w     -o CMakeFiles/cmTryCompileExec1024094628.dir/__INT64.c.o   -c /home/lau/cmake-2.8.10.2/CMakeFiles/CheckTypeSize/__INT64.c
+/home/lau/cmake-2.8.10.2/CMakeFiles/CheckTypeSize/__INT64.c:19: error: ‘__int64’ undeclared here (not in a function)
+gmake[1]: Leaving directory `/home/lau/cmake-2.8.10.2/CMakeFiles/CMakeTmp'
+gmake[1]: *** [CMakeFiles/cmTryCompileExec1024094628.dir/__INT64.c.o] Error 1
+gmake: *** [cmTryCompileExec1024094628/fast] Error 2
+
+/home/lau/cmake-2.8.10.2/CMakeFiles/CheckTypeSize/__INT64.c:
+#include <sys/types.h>
+#include <stdint.h>
+#include <stddef.h>
+
+
+#undef KEY
+#if defined(__i386)
+# define KEY '_','_','i','3','8','6'
+#elif defined(__x86_64)
+# define KEY '_','_','x','8','6','_','6','4'
+#elif defined(__ppc__)
+# define KEY '_','_','p','p','c','_','_'
+#elif defined(__ppc64__)
+# define KEY '_','_','p','p','c','6','4','_','_'
+#endif
+
+#define SIZE (sizeof(__int64))
+char info_size[] =  {'I', 'N', 'F', 'O', ':', 's','i','z','e','[',
+  ('0' + ((SIZE / 10000)%10)),
+  ('0' + ((SIZE / 1000)%10)),
+  ('0' + ((SIZE / 100)%10)),
+  ('0' + ((SIZE / 10)%10)),
+  ('0' +  (SIZE    % 10)),
+  ']',
+#ifdef KEY
+  ' ','k','e','y','[', KEY, ']',
+#endif
+  '\0'};
+
+#ifdef __CLASSIC_C__
+int main(argc, argv) int argc; char *argv[];
+#else
+int main(int argc, char *argv[])
+#endif
+{
+  int require = 0;
+  require += info_size[argc];
+  (void)argv;
+  return require;
+}
+
+
+Determining size of unsigned __int64 failed with the following output:
+Change Dir: /home/lau/cmake-2.8.10.2/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/gmake "cmTryCompileExec3165297540/fast"
+gmake -f CMakeFiles/cmTryCompileExec3165297540.dir/build.make CMakeFiles/cmTryCompileExec3165297540.dir/build
+gmake[1]: Entering directory `/home/lau/cmake-2.8.10.2/CMakeFiles/CMakeTmp'
+/home/lau/cmake-2.8.10.2/Bootstrap.cmk/cmake -E cmake_progress_report /home/lau/cmake-2.8.10.2/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec3165297540.dir/UNSIGNED___INT64.c.o
+/usr/bin/gcc   -w     -o CMakeFiles/cmTryCompileExec3165297540.dir/UNSIGNED___INT64.c.o   -c /home/lau/cmake-2.8.10.2/CMakeFiles/CheckTypeSize/UNSIGNED___INT64.c
+/home/lau/cmake-2.8.10.2/CMakeFiles/CheckTypeSize/UNSIGNED___INT64.c:19: error: expected ‘)’ before ‘__int64’
+/home/lau/cmake-2.8.10.2/CMakeFiles/CheckTypeSize/UNSIGNED___INT64.c:20: error: expected ‘)’ before ‘__int64’
+/home/lau/cmake-2.8.10.2/CMakeFiles/CheckTypeSize/UNSIGNED___INT64.c:21: error: expected ‘)’ before ‘__int64’
+/home/lau/cmake-2.8.10.2/CMakeFiles/CheckTypeSize/UNSIGNED___INT64.c:22: error: expected ‘)’ before ‘__int64’
+/home/lau/cmake-2.8.10.2/CMakeFiles/CheckTypeSize/UNSIGNED___INT64.c:23: error: expected ‘)’ before ‘__int64’
+gmake[1]: Leaving directory `/home/lau/cmake-2.8.10.2/CMakeFiles/CMakeTmp'
+gmake[1]: *** [CMakeFiles/cmTryCompileExec3165297540.dir/UNSIGNED___INT64.c.o] Error 1
+gmake: *** [cmTryCompileExec3165297540/fast] Error 2
+
+/home/lau/cmake-2.8.10.2/CMakeFiles/CheckTypeSize/UNSIGNED___INT64.c:
+#include <sys/types.h>
+#include <stdint.h>
+#include <stddef.h>
+
+
+#undef KEY
+#if defined(__i386)
+# define KEY '_','_','i','3','8','6'
+#elif defined(__x86_64)
+# define KEY '_','_','x','8','6','_','6','4'
+#elif defined(__ppc__)
+# define KEY '_','_','p','p','c','_','_'
+#elif defined(__ppc64__)
+# define KEY '_','_','p','p','c','6','4','_','_'
+#endif
+
+#define SIZE (sizeof(unsigned __int64))
+char info_size[] =  {'I', 'N', 'F', 'O', ':', 's','i','z','e','[',
+  ('0' + ((SIZE / 10000)%10)),
+  ('0' + ((SIZE / 1000)%10)),
+  ('0' + ((SIZE / 100)%10)),
+  ('0' + ((SIZE / 10)%10)),
+  ('0' +  (SIZE    % 10)),
+  ']',
+#ifdef KEY
+  ' ','k','e','y','[', KEY, ']',
+#endif
+  '\0'};
+
+#ifdef __CLASSIC_C__
+int main(argc, argv) int argc; char *argv[];
+#else
+int main(int argc, char *argv[])
+#endif
+{
+  int require = 0;
+  require += info_size[argc];
+  (void)argv;
+  return require;
+}
+
+
+Determining if the system is big endian passed with the following output:
+Change Dir: /home/lau/cmake-2.8.10.2/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/gmake "cmTryCompileExec1691725843/fast"
+gmake -f CMakeFiles/cmTryCompileExec1691725843.dir/build.make CMakeFiles/cmTryCompileExec1691725843.dir/build
+gmake[1]: Entering directory `/home/lau/cmake-2.8.10.2/CMakeFiles/CMakeTmp'
+/home/lau/cmake-2.8.10.2/Bootstrap.cmk/cmake -E cmake_progress_report /home/lau/cmake-2.8.10.2/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec1691725843.dir/TestEndianess.c.o
+/usr/bin/gcc    -o CMakeFiles/cmTryCompileExec1691725843.dir/TestEndianess.c.o   -c /home/lau/cmake-2.8.10.2/CMakeFiles/CMakeTmp/TestEndianess.c
+Linking C executable cmTryCompileExec1691725843
+/home/lau/cmake-2.8.10.2/Bootstrap.cmk/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec1691725843.dir/link.txt --verbose=1
+/usr/bin/gcc         CMakeFiles/cmTryCompileExec1691725843.dir/TestEndianess.c.o  -o cmTryCompileExec1691725843 -rdynamic 
+gmake[1]: Leaving directory `/home/lau/cmake-2.8.10.2/CMakeFiles/CMakeTmp'
+
+TestEndianess.c:
+/* A 16 bit integer is required. */
+typedef unsigned short cmakeint16;
+
+/* On a little endian machine, these 16bit ints will give "THIS IS LITTLE ENDIAN."
+   On a big endian machine the characters will be exchanged pairwise. */
+const cmakeint16 info_little[] =  {0x4854, 0x5349, 0x4920, 0x2053, 0x494c, 0x5454, 0x454c, 0x4520, 0x444e, 0x4149, 0x2e4e, 0x0000};
+
+/* on a big endian machine, these 16bit ints will give "THIS IS BIG ENDIAN."
+   On a little endian machine the characters will be exchanged pairwise. */
+const cmakeint16 info_big[] =     {0x5448, 0x4953, 0x2049, 0x5320, 0x4249, 0x4720, 0x454e, 0x4449, 0x414e, 0x2e2e, 0x0000};
+
+#ifdef __CLASSIC_C__
+int main(argc, argv) int argc; char *argv[];
+#else
+int main(int argc, char *argv[])
+#endif
+{
+  int require = 0;
+  require += info_little[argc];
+  require += info_big[argc];
+  (void)argv;
+  return require;
+}
+
+
+Looking for a Fortran compiler failed with the following output:
+-- The Fortran compiler identification is unknown
+CMake Error: your Fortran compiler: "CMAKE_Fortran_COMPILER-NOTFOUND" was not found.   Please set CMAKE_Fortran_COMPILER to a valid compiler path or name.
+-- Configuring incomplete, errors occurred!
+
